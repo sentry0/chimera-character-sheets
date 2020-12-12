@@ -63,17 +63,32 @@ button:active
     display: none;
 }
 
-.charsheet button[type=roll] {
+.charsheet button[type=roll]:not(.sheet-link-button) {
 	color: #e67d00;
     background-color: #fff1a8;
 	border-color: #e67d00;
 	height: 1em;
 }
 
-.charsheet button[type=roll]:hover {
+.charsheet button[type=roll]:hover:not(.sheet-link-button) {
 	color: #fff1a8;
     background-color: #e67d00;
 	border-color: #fff1a8;
+}
+
+.sheet-link-button {
+  background-image: none;
+  background: none!important;
+  border: none;
+  box-shadow: none;
+  padding: 0!important;
+  color: #000000;
+  cursor: pointer;
+  text-shadow: none;
+}
+
+.sheet-link-button:hover {
+	color: #fff1a8;
 }
 
 .charsheet textarea{
@@ -155,7 +170,7 @@ button:active
 	font-size: 12px;
 }
 
-.charsheet .btn {
+.charsheet .btn:not(.sheet-link-button) {
 	color: #e67d00;
     background-color: #fff1a8;
 	border-color: #e67d00;

@@ -91,8 +91,9 @@
 								<span style="font-size: 18px">Strength</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_strengthdice"></span>D+<span name="attr_strengthpip"></span>
-								<button type='roll' style="font-family: dicefontd6;" value='!wd [[@{strengthdice}d6 + @{strengthpip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{strengthdice}d6 + @{strengthpip}]]'>
+									<span name="attr_strengthdice"></span>D+<span name="attr_strengthpip"></span>
+								</button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">
@@ -101,17 +102,19 @@
 									<span style="padding-left: 10px; font-size: 14px">Climbing</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_climbingdice"></span>D+<span name="attr_climbingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{strengthdice} + @{climbingdice})d6 + (@{strengthpip} + @{climbingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{climbingdice})d6 + (@{strengthpip} + @{climbingpip})]]'>
+										<span name="attr_climbingdice"></span>D+<span name="attr_climbingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
 								<div style="display: table-cell; width: 45%">
 									<span style="padding-left: 10px; font-size: 14px">Jumping</span>
 								</div>
-								<div style="display: table-cell; width: 55%">
-									<span name="attr_jumpingdice"></span>D+<span name="attr_jumpingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{strengthdice} + @{jumpingdice})d6 + (@{strengthpip} + @{jumpingpip})]]'>F</button>
+								<div style="display: table-cell; width: 55%">		
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{jumpingdice})d6 + (@{strengthpip} + @{jumpingpip})]]'>
+										<span name="attr_jumpingdice"></span>D+<span name="attr_jumpingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -119,8 +122,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Running</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_runningdice"></span>D+<span name="attr_runningpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{strengthdice} + @{runningdice})d6 + (@{strengthpip} + @{runningpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{runningdice})d6 + (@{strengthpip} + @{runningpip})]]'>
+										<span name="attr_runningdice"></span>D+<span name="attr_runningpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -128,8 +132,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Swimming</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_swimmingdice"></span>D+<span name="attr_swimmingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{strengthdice} + @{swimmingdice})d6 + (@{strengthpip} + @{swimmingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{swimmingdice})d6 + (@{strengthpip} + @{swimmingpip})]]'>
+										<span name="attr_swimmingdice"></span>D+<span name="attr_swimmingpip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -140,8 +145,9 @@
 								<span style="font-size: 18px">Agility</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_agility"></span>D+<span name="attr_agilitypip"></span>
-								<button type='roll' class="astext" style="font-family: dicefontd6" value='!wd [[@{agility}d6 + @{agilitypip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{agility}d6 + @{agilitypip}]]'>
+									<span name="attr_agility"></span>D+<span name="attr_agilitypip"></span>
+								</button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">
@@ -150,8 +156,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Acrobatics</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_acrobaticsdice"></span>D+<span name="attr_acrobaticspip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{acrobaticsdice})d6 + (@{agilitypip} + @{acrobaticspip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{acrobaticsdice})d6 + (@{agilitypip} + @{acrobaticspip})]]'>
+										<span name="attr_acrobaticsdice"></span>D+<span name="attr_acrobaticspip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -159,8 +166,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Brawling</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_brawlingdice"></span>D+<span name="attr_brawlingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{brawlingdice})d6 + (@{agilitypip} + @{brawlingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{brawlingdice})d6 + (@{agilitypip} + @{brawlingpip})]]'>
+										<span name="attr_brawlingdice"></span>D+<span name="attr_brawlingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -168,8 +176,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Contortion</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_contortiondice"></span>D+<span name="attr_contortionpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{contortiondice})d6 + (@{agilitypip} + @{contortionpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{contortiondice})d6 + (@{agilitypip} + @{contortionpip})]]'>
+										<span name="attr_contortiondice"></span>D+<span name="attr_contortionpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -177,8 +186,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Dodge</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_dodgedice"></span>D+<span name="attr_dodgepip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{dodgedice})d6 + (@{agilitypip} + @{dodgepip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{dodgedice})d6 + (@{agilitypip} + @{dodgepip})]]'>
+										<span name="attr_dodgedice"></span>D+<span name="attr_dodgepip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -186,8 +196,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Flying</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_flyingdice"></span>D+<span name="attr_flyingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{flyingdice})d6 + (@{agilitypip} + @{flyingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{flyingdice})d6 + (@{agilitypip} + @{flyingpip})]]'>
+										<span name="attr_flyingdice"></span>D+<span name="attr_flyingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -195,8 +206,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Marksmanship</span>
 								</div>
 								<div style="display: table-cell; width: 55%">							
-									<span name="attr_marksmanshipdice"></span>D+<span name="attr_marksmanshippip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{marksmanshipdice})d6 + (@{agilitypip} + @{marksmanshippip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{marksmanshipdice})d6 + (@{agilitypip} + @{marksmanshippip})]]'>
+										<span name="attr_marksmanshipdice"></span>D+<span name="attr_marksmanshippip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -204,8 +216,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Missile Weapons</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_missileweaponsdice"></span>D+<span name="attr_missileweaponspip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{missileweaponsdice})d6 + (@{agilitypip} + @{missileweaponspip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{missileweaponsdice})d6 + (@{agilitypip} + @{missileweaponspip})]]'>
+										<span name="attr_missileweaponsdice"></span>D+<span name="attr_missileweaponspip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -213,8 +226,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Melee Combat</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_meleecombatdice"></span>D+<span name="attr_meleecombatpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{meleecombatdice})d6 + (@{agilitypip} + @{meleecombatpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{meleecombatdice})d6 + (@{agilitypip} + @{meleecombatpip})]]'>
+										<span name="attr_meleecombatdice"></span>D+<span name="attr_meleecombatpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -222,8 +236,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Riding</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_ridingdice"></span>D+<span name="attr_ridingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{ridingdice})d6 + (@{agilitypip} + @{ridingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{ridingdice})d6 + (@{agilitypip} + @{ridingpip})]]'>
+										<span name="attr_ridingdice"></span>D+<span name="attr_ridingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -231,8 +246,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Sleight of Hand</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_sleightofhanddice"></span>D+<span name="attr_sleightofhandpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{sleightofhanddice})d6 + (@{agilitypip} + @{sleightofhandpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{sleightofhanddice})d6 + (@{agilitypip} + @{sleightofhandpip})]]'>
+										<span name="attr_sleightofhanddice"></span>D+<span name="attr_sleightofhandpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -240,8 +256,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Sneak</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_sneakdice"></span>D+<span name="attr_sneakpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{sneakdice})d6 + (@{agilitypip} + @{sneakpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{sneakdice})d6 + (@{agilitypip} + @{sneakpip})]]'>
+										<span name="attr_sneakdice"></span>D+<span name="attr_sneakpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -249,8 +266,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Throwing</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_throwingdice"></span>D+<span name="attr_throwingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{agility} + @{throwingdice})d6 + (@{agilitypip} + @{throwingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{throwingdice})d6 + (@{agilitypip} + @{throwingpip})]]'>
+										<span name="attr_throwingdice"></span>D+<span name="attr_throwingpip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -263,8 +281,9 @@
 								<span style="font-size: 18px">Stamina</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_stamina"></span>D+<span name="attr_staminapip"></span>
-								<button type='roll' class="astext" style="font-family: dicefontd6" value='!wd [[@{stamina}d6 + @{staminapip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{stamina}d6 + @{staminapip}]]'>
+									<span name="attr_stamina"></span>D+<span name="attr_staminapip"></span>
+								</button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">
@@ -273,8 +292,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Fortitude</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_fortitudedice"></span>D+<span name="attr_fortitudepip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{stamina} + @{fortitudedice})d6 + (@{staminapip} + @{fortitudepip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{stamina} + @{fortitudedice})d6 + (@{staminapip} + @{fortitudepip})]]'>
+										<span name="attr_fortitudedice"></span>D+<span name="attr_fortitudepip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -285,8 +305,9 @@
 								<span style="font-size: 18px">Intellect</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_intellect"></span>D+<span name="attr_intellectpip"></span>
-								<button type='roll' class="astext" style="font-family: dicefontd6" value='!wd [[@{intellect}d6 + @{intellectpip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{intellect}d6 + @{intellectpip}]]'>
+									<span name="attr_intellect"></span>D+<span name="attr_intellectpip"></span>
+								</button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">
@@ -295,8 +316,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Business</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_businessdice"></span>D+<span name="attr_businesspip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{businessdice})d6 + (@{intellectpip} + @{businesspip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{businessdice})d6 + (@{intellectpip} + @{businesspip})]]'>
+										<span name="attr_businessdice"></span>D+<span name="attr_businesspip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -304,8 +326,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Investigation</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_investigationdice"></span>D+<span name="attr_investigationpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{investigationdice})d6 + (@{intellectpip} + @{investigationpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{investigationdice})d6 + (@{intellectpip} + @{investigationpip})]]'>
+										<span name="attr_investigationdice"></span>D+<span name="attr_investigationpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -313,8 +336,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Languages</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_languagesdice"></span>D+<span name="attr_languagespip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{languagesdice})d6 + (@{intellectpip} + @{languagespip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{languagesdice})d6 + (@{intellectpip} + @{languagespip})]]'>
+										<span name="attr_languagesdice"></span>D+<span name="attr_languagespip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -322,8 +346,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Perception</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_perceptiondice"></span>D+<span name="attr_perceptionpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{perceptiondice})d6 + (@{intellectpip} + @{perceptionpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{perceptiondice})d6 + (@{intellectpip} + @{perceptionpip})]]'>
+										<span name="attr_perceptiondice"></span>D+<span name="attr_perceptionpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -331,8 +356,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Scholar</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_scholardice"></span>D+<span name="attr_scholarpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{scholardice})d6 + (@{intellectpip} + @{scholarpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{scholardice})d6 + (@{intellectpip} + @{scholarpip})]]'>
+										<span name="attr_scholardice"></span>D+<span name="attr_scholarpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -340,8 +366,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Survival</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_survivaldice"></span>D+<span name="attr_survivalpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{survivaldice})d6 + (@{intellectpip} + @{survivalpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{survivaldice})d6 + (@{intellectpip} + @{survivalpip})]]'>
+										<span name="attr_survivaldice"></span>D+<span name="attr_survivalpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -349,8 +376,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Tracking</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_trackingdice"></span>D+<span name="attr_trackingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{intellect} + @{trackingdice})d6 + (@{intellectpip} + @{trackingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{trackingdice})d6 + (@{intellectpip} + @{trackingpip})]]'>
+										<span name="attr_trackingdice"></span>D+<span name="attr_trackingpip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -361,8 +389,9 @@
 								<span style="font-size: 18px">Spirit</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_spirit"></span>D+<span name="attr_spiritpip"></span>
-								<button type='roll' class="astext" style="font-family: dicefontd6" value='!wd [[@{spirit}d6 + @{spiritpip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[@{spirit}d6 + @{spiritpip}]]'>
+									<span name="attr_spirit"></span>D+<span name="attr_spiritpip"></span>
+								</button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">
@@ -371,8 +400,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Animal Handling</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_animalhandlingdice"></span>D+<span name="attr_animalhandlingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{spirit} + @{animalhandlingdice})d6 + (@{spiritpip} + @{animalhandlingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{animalhandlingdice})d6 + (@{spiritpip} + @{animalhandlingpip})]]'>
+										<span name="attr_animalhandlingdice"></span>D+<span name="attr_animalhandlingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -380,8 +410,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Artist</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_artistdice"></span>D+<span name="attr_artistpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{spirit} + @{artistdice})d6 + (@{spiritpip} + @{artistpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{artistdice})d6 + (@{spiritpip} + @{artistpip})]]'>
+										<span name="attr_artistdice"></span>D+<span name="attr_artistpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -389,8 +420,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Power</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_powerdice"></span>D+<span name="attr_powerpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{spirit} + @{powerdice})d6 + (@{spiritpip} + @{powerpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{powerdice})d6 + (@{spiritpip} + @{powerpip})]]'>
+										<span name="attr_powerdice"></span>D+<span name="attr_powerpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -398,8 +430,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Willpower</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_willpowerdice"></span>D+<span name="attr_willpowerpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{spirit} + @{willpowerdice})d6 + (@{spiritpip} + @{willpowerpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{willpowerdice})d6 + (@{spiritpip} + @{willpowerpip})]]'>
+										<span name="attr_willpowerdice"></span>D+<span name="attr_willpowerpip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -412,8 +445,7 @@
 								<span style="font-size: 18px">Charm</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_charm"></span>D+<span name="attr_charmpip"></span>
-								<button type='roll' style="font-family: dicefontd6" value='!wd [[@{charm}d6 + @{charmpip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{charm}d6 + @{charmpip}]]'><span name="attr_charm"></span>D+<span name="attr_charmpip"></span></button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">
@@ -422,8 +454,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Command</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_commanddice"></span>D+<span name="attr_commandpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{commanddice})d6 + (@{charmpip} + @{commandpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{commanddice})d6 + (@{charmpip} + @{commandpip})]]'>
+										<span name="attr_commanddice"></span>D+<span name="attr_commandpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -431,8 +464,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Con</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_condice"></span>D+<span name="attr_conpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{condice})d6 + (@{charmpip} + @{conpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{condice})d6 + (@{charmpip} + @{conpip})]]'>
+										<span name="attr_condice"></span>D+<span name="attr_conpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -440,8 +474,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Disguise</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_disguisedice"></span>D+<span name="attr_disguisepip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{disguisedice})d6 + (@{charmpip} + @{disguisepip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{disguisedice})d6 + (@{charmpip} + @{disguisepip})]]'>
+										<span name="attr_disguisedice"></span>D+<span name="attr_disguisepip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -449,8 +484,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Gambling</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_gamblingdice"></span>D+<span name="attr_gamblingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{gamblingdice})d6 + (@{charmpip} + @{gamblingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{gamblingdice})d6 + (@{charmpip} + @{gamblingpip})]]'>
+										<span name="attr_gamblingdice"></span>D+<span name="attr_gamblingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -458,8 +494,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Intimidation</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_intimidationdice"></span>D+<span name="attr_intimidationpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{intimidationdice})d6 + (@{charmpip} + @{intimidationpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{intimidationdice})d6 + (@{charmpip} + @{intimidationpip})]]'>
+										<span name="attr_intimidationdice"></span>D+<span name="attr_intimidationpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -467,8 +504,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Persuasion</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_persuasiondice"></span>D+<span name="attr_persuasionpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{persuasiondice})d6 + (@{charmpip} + @{persuasionpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{persuasiondice})d6 + (@{charmpip} + @{persuasionpip})]]'>
+										<span name="attr_persuasiondice"></span>D+<span name="attr_persuasionpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -476,8 +514,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Seduction</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_seductiondice"></span>D+<span name="attr_seductionpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{seductiondice})d6 + (@{charmpip} + @{seductionpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{seductiondice})d6 + (@{charmpip} + @{seductionpip})]]'>
+										<span name="attr_seductiondice"></span>D+<span name="attr_seductionpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -485,8 +524,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Streetwise</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_streetwisedice"></span>D+<span name="attr_streetwisepip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{charm} + @{streetwisedice})d6 + (@{charmpip} + @{streetwisepip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{streetwisedice})d6 + (@{charmpip} + @{streetwisepip})]]'>
+										<span name="attr_streetwisedice"></span>D+<span name="attr_streetwisepip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -497,8 +537,9 @@
 								<span style="font-size: 18px">Technology</span>
 							</div>
 							<div style="display: table-cell; width: 55%">
-								<span name="attr_technology"></span>D+<span name="attr_technologypip"></span>
-								<button type='roll' class="astext" style="font-family: dicefontd6" value='!wd [[@{technology}d6 + @{technologypip}]]'>F</button>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{technology}d6 + @{technologypip}]]'>
+									<span name="attr_technology"></span>D+<span name="attr_technologypip"></span>
+								</button>
 							</div>
 						</div>
 						<div style="display: table; width: 100%">				
@@ -507,8 +548,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Demolitions</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_demolitionsdice"></span>D+<span name="attr_demolitionspip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{demolitionsdice})d6 + (@{technologypip} + @{demolitionspip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{demolitionsdice})d6 + (@{technologypip} + @{demolitionspip})]]'>
+										<span name="attr_demolitionsdice"></span>D+<span name="attr_demolitionspip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -516,8 +558,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Forgery</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_forgerydice"></span>D+<span name="attr_forgerypip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{forgerydice})d6 + (@{technologypip} + @{forgerypip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{forgerydice})d6 + (@{technologypip} + @{forgerypip})]]'>
+										<span name="attr_forgerydice"></span>D+<span name="attr_forgerypip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -525,8 +568,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Lockpicking</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_lockpickingdice"></span>D+<span name="attr_lockpickingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{lockpickingdice})d6 + (@{technologypip} + @{lockpickingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{lockpickingdice})d6 + (@{technologypip} + @{lockpickingpip})]]'>
+										<span name="attr_lockpickingdice"></span>D+<span name="attr_lockpickingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -534,8 +578,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Medicine</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_medicinedice"></span>D+<span name="attr_medicinepip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{medicinedice})d6 + (@{technologypip} + @{medicinepip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{medicinedice})d6 + (@{technologypip} + @{medicinepip})]]'>
+										<span name="attr_medicinedice"></span>D+<span name="attr_medicinepip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -543,8 +588,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Navigation</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_navigationdice"></span>D+<span name="attr_navigationpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{navigationdice})d6 + (@{technologypip} + @{navigationpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{navigationdice})d6 + (@{technologypip} + @{navigationpip})]]'>
+										<span name="attr_navigationdice"></span>D+<span name="attr_navigationpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -552,8 +598,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Piloting</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_pilotingdice"></span>D+<span name="attr_pilotingpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{pilotingdice})d6 + (@{technologypip} + @{pilotingpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{pilotingdice})d6 + (@{technologypip} + @{pilotingpip})]]'>
+										<span name="attr_pilotingdice"></span>D+<span name="attr_pilotingpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -561,8 +608,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Repair</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_repairdice"></span>D+<span name="attr_repairpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{repairdice})d6 + (@{technologypip} + @{repairpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{repairdice})d6 + (@{technologypip} + @{repairpip})]]'>
+										<span name="attr_repairdice"></span>D+<span name="attr_repairpip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -570,8 +618,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Security</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_securitydice"></span>D+<span name="attr_securitypip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{securitydice})d6 + (@{technologypip} + @{securitypip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{securitydice})d6 + (@{technologypip} + @{securitypip})]]'>
+										<span name="attr_securitydice"></span>D+<span name="attr_securitypip"></span>
+									</button>
 								</div>
 							</div>
 							<div style="display: table-row;">
@@ -579,8 +628,9 @@
 									<span style="padding-left: 10px; font-size: 14px">Tech</span>
 								</div>
 								<div style="display: table-cell; width: 55%">
-									<span name="attr_techdice"></span>D+<span name="attr_techpip"></span>
-									<button type='roll' style="font-family: dicefontd6" value='!wd [[(@{technology} + @{techdice})d6 + (@{technologypip} + @{techpip})]]'>F</button>
+									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{techdice})d6 + (@{technologypip} + @{techpip})]]'>
+										<span name="attr_techdice"></span>D+<span name="attr_techpip"></span>
+									</button>
 								</div>
 							</div>
 						</div>
@@ -632,6 +682,7 @@
 			<div class="sheet-heading">
 				Secondary Attributes
 			</div>
+			<br />
 			<table style="width: 100%">
 				<tr>
 					<td>
@@ -669,6 +720,7 @@
 			<div class="sheet-heading">
 				Advantages &amp; Disadvantages
 			</div>		
+			<br />
 			<div class="sheet-2colrow">
 				<div name="Advantages" class="sheet-col">
 					<label class="sheet-areaLabel">Advantages:</label> 
@@ -1545,6 +1597,7 @@
 				<div class="sheet-heading">
 					Secondary Attributes
 				</div>
+				<br />
 				<table>
 					<tr>
 						<td>
@@ -1583,6 +1636,7 @@
 			<div class="sheet-heading">
 				Advantages &amp; Disadvantages
 			</div>	
+			<br />
 			<div class="sheet-2colrow">
 				<div name="Advantages" class="sheet-col">
 				<label class="sheet-areaLabel">Advantages:</label> 
