@@ -2,6 +2,7 @@
 	background: rgb(253,177,0);
 	background: linear-gradient(90deg, rgba(253,177,0,1) 36%, rgba(254,114,0,1) 100%);
 	border-radius: 20px;
+	border: 10px solid black;
 	color: #000000;
 }
 
