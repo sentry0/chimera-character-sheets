@@ -70,16 +70,21 @@
 				<div class="sheet-heading">
 					Attributes &amp; Skills
 				</div>
-				<div style="display: table">
-					<div style="display: table-row; line-height: 30px">
-						<div class="sheet-bold" style="display: table-cell;">
-							<input type="number" name="attr_attributeandskillsdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
-							<input type="number" name="attr_attributeandskillspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
-							<button type='roll' style="font-family: dicefontd6" value='!wd [[@{attributeandskillsdice}d6 + @{attributeandskillspip}]]'>F</button>
-						</div>
-						<div style="display: table-cell">
-							<button type='roll' style="padding: 4px" value='!wd [[@{agility}d6 + @{agilitypip}&{tracker}]]'>Initiative</button>
-						</div>
+				<div>
+					<div class="sheet-die-roller">
+						<table style="float: left; border-top: 0px;">
+							<tr>
+								<td style="line-height: 18px;">
+									Die Code: <input type="number" name="attr_attributeandskillsdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
+									<input type="number" name="attr_attributeandskillspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
+									MAP: <input type="number" name="attr_attributeandskillspenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{attributeandskillsdice} + @{attributeandskillspenalty})d6 + @{attributeandskillspip}]]'>F</button>
+								</td>
+							</tr>
+						</table>						
+					</div>
+					<div style="padding-top: 8px; float: right">
+						<button type='roll' style="padding: 3px;" value='!wd [[@{agility}d6 + @{agilitypip}&{tracker}]]'>Initiative</button>	
 					</div>
 				</div>
 			</div>
@@ -737,13 +742,18 @@
 				<div class="sheet-heading">
 					Powers
 				</div>
-				<div style="display: table">
-					<div style="display: table-row; line-height: 30px">
-						<div class="sheet-bold" style="display: table-cell;">
-							<input type="number" name="attr_powersdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
-							<input type="number" name="attr_powerspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
-							<button type='roll' style="font-family: dicefontd6" value='!wd [[@{powersdice}d6 + @{powerspip}]]'>F</button>
-						</div>
+				<div>
+					<div class="sheet-die-roller">
+						<table style="float: left; border-top: 0px;">
+							<tr>
+								<td style="line-height: 18px;">
+									Die Code: <input type="number" name="attr_powersdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
+									<input type="number" name="attr_powerspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
+									MAP: <input type="number" name="attr_powerspenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{powersdice} + @{powerspenalty})d6 + @{powerspip}]]'>F</button>
+								</td>
+							</tr>
+						</table>						
 					</div>
 				</div>
 			</div>
@@ -798,13 +808,18 @@
 				<div class="sheet-heading">
 					Martial Arts
 				</div>
-				<div style="display: table">
-					<div style="display: table-row; line-height: 30px">
-						<div class="sheet-bold" style="display: table-cell;">
-							<input type="number" name="attr_madice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
-							<input type="number" name="attr_mapip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
-							<button type='roll' style="font-family: dicefontd6" value='!wd [[@{madice}d6 + @{mapip}]]'>F</button>
-						</div>
+				<div>
+					<div class="sheet-die-roller">
+						<table style="float: left; border-top: 0px;">
+							<tr>
+								<td style="line-height: 18px;">
+									Die Code: <input type="number" name="attr_madice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
+									<input type="number" name="attr_mapip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
+									MAP: <input type="number" name="attr_mapenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{madice} + @{mapenalty})d6 + @{mapip}]]'>F</button>
+								</td>
+							</tr>
+						</table>						
 					</div>
 				</div>
 			</div>
@@ -862,13 +877,18 @@
 				<div class="sheet-heading">
 					Equipment
 				</div>
-				<div style="display: table">
-					<div style="display: table-row; line-height: 30px">
-						<div class="sheet-bold" style="display: table-cell;">
-							<input type="number" name="attr_weaponsandarmordice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
-							<input type="number" name="attr_weaponsandarmorpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
-							<button type='roll' style="font-family: dicefontd6" value='!wd [[@{weaponsandarmordice}d6 + @{weaponsandarmorpip}]]'>F</button>
-						</div>
+				<div>
+					<div class="sheet-die-roller">
+						<table style="float: left; border-top: 0px;">
+							<tr>
+								<td style="line-height: 18px;">
+									Die Code: <input type="number" name="attr_weaponsandarmordice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
+									<input type="number" name="attr_weaponsandarmorpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
+									MAP: <input type="number" name="attr_weaponsandarmorpenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{weaponsandarmordice} + @{weaponsandarmorpenalty})d6 + @{weaponsandarmorpip}]]'>F</button>
+								</td>
+							</tr>
+						</table>						
 					</div>
 				</div>
 			</div>
