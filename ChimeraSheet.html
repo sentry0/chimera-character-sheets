@@ -670,8 +670,8 @@
 								<tr>
 									<td style="width: 40%"><span name="attr_specializationname"></span></td>
 									<td style="width: 40%"><span name="attr_rootskill"></span></td>
-									<td style="width: 10%"><span name="attr_specializationdice"></span></td>
-									<td style="width: 10%"><span name="attr_specializationpips"></span></td>								
+									<td style="width: 10%; text-align: center"><span name="attr_specializationdice"></span></td>
+									<td style="width: 10%; text-align: center"><span name="attr_specializationpips"></span></td>								
 								</tr>
 							</table>
 						</td>
@@ -683,8 +683,8 @@
 									<tr>
 										<td style="width: 40%"><span name="attr_addspecializationname"></span></td>
 										<td style="width: 40%"><span name="attr_addrootskill"></span></td>
-										<td style="width: 10%"><span name="attr_addspecializationdice"></span></td>
-										<td style="width: 10%"><span name="attr_addspecializationpips"></span></td>
+										<td style="width: 10%; text-align: center"><span name="attr_addspecializationdice"></span></td>
+										<td style="width: 10%; text-align: center"><span name="attr_addspecializationpips"></span></td>
 									</tr>
 								</table>
 							</fieldset>	
@@ -716,7 +716,7 @@
 								<i></i>
 							</div>
 						</div>	
-						<span name="attr_evasion"></span></span>
+						<span name="attr_evasion"></span>
 					</td>
 					<td>
 						<div class="sheet-tooltip">
@@ -738,7 +738,7 @@
 							<div class="sheet-right">
 								<div class="sheet-text-content">
 									<h3>Soak</h3>
-									<p>A measurment of how much physical damage you may endure.  Subtracted from all incoming physical and energy damage.</p>
+									<p>A component of how much physical damage you may endure.  Subtracted from all incoming physical and energy damage.</p>
 									<p>Equals your total Stamina die code x3 + pips</p>
 								</div>
 								<i></i>
@@ -1135,26 +1135,26 @@
 					<table style="width:100%">
 						<tr>
 							<td>
-								<label>Name:
-								<input class="sheet-right sheet-shorttext" type="text" name="attr_charactername" style="width:75%;" /></label> 
+								<label>Name:</label> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_charactername" style="width:75%;" />
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label>Player:
-								<input class="sheet-right sheet-shorttext" type="text" name="attr_player" style="width:75%;" /></label> 
+								<label>Player:</label> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_player" style="width:75%;" /> 
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label>Occupation:
-								<input class="sheet-right sheet-shorttext" type="text" name="attr_occupation" style="width:75%;" /></label> 
+								<label>Occupation:</label> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_occupation" style="width:75%;" /> 
 							</td>
 						</tr>
 						<tr>
 							<td>
-								<label>Species:
-								<input class="sheet-right sheet-shorttext" style="width:75%;" type="text" name="attr_species" /></label>
+								<label>Species:</label> 
+								<input class="sheet-right sheet-shorttext" style="width:75%;" type="text" name="attr_species" />
 							</td>
 						</tr>
 					</table>
@@ -1162,20 +1162,20 @@
 					<table style="width: 100%">
 						<tr>
 							<td>
-								<label>Gender:
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_gender" /></label>
+								<label>Gender:</label> 
+								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_gender" />
 							</td>
 							<td>
-								<label>Age:
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_age" /></label>
+								<label>Age:</label> 
+								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_age" />
 							</td>
 							<td>
-								<label>Height:
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_height" /></label>
+								<label>Height:</label> 
+								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_height" />
 							</td>
 							<td>
-								<label>Weight:
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_weight" /></label>
+								<label>Weight:</label> 
+								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_weight" />
 							</td>
 						</tr>
 					</table>					
@@ -1698,15 +1698,15 @@
 						Skill Specializations
 					</div>
 					<label>Name
-						<input type="text" style="width: 35%" class="sheet-regular-textbox" name="attr_specializationname" /> Skill 
-						<input type="text" style="width: 35%" class="sheet-regular-textbox" name="attr_rootskill" /> Dice 
+						<input type="text" style="width: 34%" class="sheet-regular-textbox" name="attr_specializationname" /> Skill 
+						<input type="text" style="width: 34%" class="sheet-regular-textbox" name="attr_rootskill" /> Dice 
 						<input type="number" name="attr_specializationdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 						<input type="number" name="attr_specializationpips" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 					</label>
 					<fieldset class="repeating_addspecialization">
 						<label>Name
-							<input type="text" style="width: 35%" class="sheet-regular-textbox" name="attr_addspecializationname" /> Skill 
-							<input type="text" style="width: 35%" class="sheet-regular-textbox" name="attr_addrootskill" /> Dice 
+							<input type="text" style="width: 34%" class="sheet-regular-textbox" name="attr_addspecializationname" /> Skill 
+							<input type="text" style="width: 34%" class="sheet-regular-textbox" name="attr_addrootskill" /> Dice 
 							<input type="number" name="attr_addspecializationdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 							<input type="number" name="attr_addspecializationpips" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 						</label>
@@ -1720,8 +1720,8 @@
 				<table>
 					<tr>
 						<td>
-							<label>Move:
-							<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_move" value="10m" /></label>
+							<label>Move:</label>
+							<input class="sheet-smalltext sheet-shorttext" type="text" style="vertical-align: top" name="attr_move" value="10m" />
 						</td>
 						<td>
 							<div class="sheet-tooltip">
@@ -1757,7 +1757,7 @@
 								<div class="sheet-right">
 									<div class="sheet-text-content">
 										<h3>Soak</h3>
-										<p>A measurment of how much physical damage you may endure.  Subtracted from all incoming physical and energy damage.</p>
+										<p>A component of how much physical damage you may endure.  Subtracted from all incoming physical and energy damage.</p>
 										<p>Equals your total Stamina die code x3 + pips</p>
 									</div>
 									<i></i>
