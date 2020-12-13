@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
 .charsheet {
 	background: rgb(253,177,0);
 	background: linear-gradient(90deg, rgba(253,177,0,1) 36%, rgba(254,114,0,1) 100%);
@@ -11,13 +13,14 @@
 	padding-bottom: 10px;
 	padding-left: 5px;
 	font-size: 2em; 
-	font-family: Stormfaze, 'Helvetica Neue', 'Arial Black';
+	font-family: Orbitron;
 	border: 1px solid black;
 	color: rgb(253,177,0);
 	color: linear-gradient(90deg, rgba(253,177,0,1) 36%, rgba(254,114,0,1) 100%);
 	background: #000000;
 	letter-spacing: 0.3em;
 	border-radius: 10px;
+	font-weight: 900;
 }
 
 .charsheet .sheet-die-roller-tab {
@@ -27,7 +30,7 @@
 .charsheet .sheet-subheading {
 	padding-top: 10px;
 	font-size: 1.5em; 
-	font-family: Stormfaze, 'Helvetica Neue', 'Arial Black';
+	font-family: Orbitron;
 }
 
 .charsheet .sheet-section {
