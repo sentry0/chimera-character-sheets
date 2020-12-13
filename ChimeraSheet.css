@@ -49,7 +49,6 @@
 table.sheet-list {
 	border-collapse: collapse;
 	border-spacing: 0px;
-	border-bottom: 3px solid black;
 }
 
 table.sheet-list td {
