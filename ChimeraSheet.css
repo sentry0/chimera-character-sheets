@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron|Fira+Sans&display=swap');
+
 
 .charsheet {
 	background: rgb(253,177,0);
@@ -6,6 +7,7 @@
 	border-radius: 20px;
 	border: 10px solid black;
 	color: #000000;
+	font-family: 'Fira Sans';
 }
 
 .charsheet .sheet-heading {
@@ -31,6 +33,7 @@
 	padding-top: 10px;
 	font-size: 1.5em; 
 	font-family: Orbitron;
+	font-weight: 900;
 }
 
 .charsheet .sheet-section {
@@ -39,7 +42,24 @@
 
 .charsheet th {
 	font-size: 1.3em;
-	font-weight: 300;
+	font-weight: 700;
+	border-bottom: 3px solid black;
+}
+
+table.sheet-list {
+	border-collapse: collapse;
+	border-spacing: 0px;
+	border-bottom: 3px solid black;
+}
+
+table.sheet-list td {
+	padding-top: 3px;
+	padding-bottom: 3px;
+	
+}
+
+.sheet-nested-table td {
+	border-bottom: 1px solid black;
 }
 
 .sheet-block-a,
@@ -183,7 +203,12 @@ button:active
 
 .charsheet label {
 	color: #000000;
-	font-weight: 300;
+	font-weight: 700;
+	display: inline;
+}
+
+.charsheet label.sheet-tooltip-pointer {
+	cursor: help;
 }
 
 .charsheet input[type=button].roll-small{
@@ -208,12 +233,19 @@ button:active
 .sheet-tooltip h3 {
 	margin:12px 0;
 	color: #FEA600;
-	font-weight: 300;
+	font-weight: 700;
+	font-family: Orbitron;
+}
+
+
+.sheet-tooltip .sheet-text-content {
+    padding:10px 20px;
 }
 
 .sheet-tooltip .sheet-right {
-    min-width:300px;
-    max-width:500px;
+	font-family: 'Fira Sans';
+    min-width:350px;
+    max-width:600px;
     top:50%;
     left:100%;
     margin-left:20px;
@@ -234,11 +266,8 @@ button:active
 }
 
 .sheet-tooltip:hover .sheet-right {
-    visibility:visible; opacity:1;
-}
-
-.sheet-tooltip .sheet-text-content {
-    padding:10px 20px;
+    visibility:visible; 
+	opacity:1;
 }
 
 .sheet-tooltip .sheet-right i {
@@ -258,6 +287,55 @@ button:active
     left:0;
     top:50%;
     transform:translate(50%,-50%) rotate(-45deg);
+    background-color:#444444;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+}
+
+.sheet-tooltip .sheet-left {
+	font-family: 'Fira Sans';
+    min-width:350px;
+    max-width:600px;
+    top:50%;
+    right:100%;
+    margin-left:20px;
+    transform:translate(0, -50%);
+    padding:0;
+    color:#EEEEEE;
+    background-color:#444444;
+    font-weight:normal;
+    font-size:13px;
+    border-radius:8px;
+    position:absolute;
+    z-index:99999999;
+    box-sizing:border-box;
+    box-shadow:0 1px 8px rgba(0,0,0,0.5);
+    visibility:hidden; 
+	opacity:0; 
+	transition:opacity 0.8s;
+}
+
+.sheet-tooltip:hover .sheet-left {
+    visibility:visible; 
+	opacity:1;
+}
+
+.sheet-tooltip .sheet-left i {
+    position:absolute;
+    top:50%;
+    left:100%;
+    margin-top:-12px;
+    width:12px;
+    height:24px;
+    overflow:hidden;
+}
+.sheet-tooltip .sheet-left i::after {
+    content:'';
+    position:absolute;
+    width:12px;
+    height:12px;
+    right:0;
+    top:50%;
+    transform:translate(-50%,-50%) rotate(45deg);
     background-color:#444444;
     box-shadow:0 1px 8px rgba(0,0,0,0.5);
 }
