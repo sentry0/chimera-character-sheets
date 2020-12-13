@@ -51,12 +51,6 @@ table.sheet-list {
 	border-spacing: 0px;
 }
 
-table.sheet-list td {
-	padding-top: 3px;
-	padding-bottom: 3px;
-	
-}
-
 .sheet-nested-table td {
 	border-bottom: 1px solid black;
 }
