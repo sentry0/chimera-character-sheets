@@ -76,8 +76,19 @@
 							<tr>
 								<td style="line-height: 18px;">
 									Die Code: <input type="number" name="attr_attributeandskillsdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
-									<input type="number" name="attr_attributeandskillspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
-									MAP: <input type="number" name="attr_attributeandskillspenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<input type="number" name="attr_attributeandskillspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />	
+									<div class="sheet-tooltip">
+										MAP:
+										<div class="sheet-right">
+											<div class="sheet-text-content">
+												<h3>Multi-Action Penalty (MAP)</h3>
+												<p>The total penalty applied to your action rolls based on the number of standard actions you wish to take.</p>
+												<p>Equal to the number of standard actions you are taking -1 (n - 1).</p>
+											</div>
+											<i></i>
+										</div>
+									</div>									
+									<input type="number" name="attr_attributeandskillspenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
 									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{attributeandskillsdice} + @{attributeandskillspenalty})d6 + @{attributeandskillspip}]]'>F</button>
 								</td>
 							</tr>
@@ -749,7 +760,18 @@
 								<td style="line-height: 18px;">
 									Die Code: <input type="number" name="attr_powersdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_powerspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
-									MAP: <input type="number" name="attr_powerspenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<div class="sheet-tooltip">
+										MAP:
+										<div class="sheet-right">
+											<div class="sheet-text-content">
+												<h3>Multi-Action Penalty (MAP)</h3>
+												<p>The total penalty applied to your action rolls based on the number of standard actions you wish to take.</p>
+												<p>Equal to the number of standard actions you are taking -1 (n - 1).</p>
+											</div>
+											<i></i>
+										</div>
+									</div>	 
+									<input type="number" name="attr_powerspenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
 									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{powersdice} + @{powerspenalty})d6 + @{powerspip}]]'>F</button>
 								</td>
 							</tr>
@@ -815,7 +837,18 @@
 								<td style="line-height: 18px;">
 									Die Code: <input type="number" name="attr_madice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_mapip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
-									MAP: <input type="number" name="attr_mapenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<div class="sheet-tooltip">
+										MAP:
+										<div class="sheet-right">
+											<div class="sheet-text-content">
+												<h3>Multi-Action Penalty (MAP)</h3>
+												<p>The total penalty applied to your action rolls based on the number of standard actions you wish to take.</p>
+												<p>Equal to the number of standard actions you are taking -1 (n - 1).</p>
+											</div>
+											<i></i>
+										</div>
+									</div>	 
+									<input type="number" name="attr_mapenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
 									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{madice} + @{mapenalty})d6 + @{mapip}]]'>F</button>
 								</td>
 							</tr>
@@ -884,7 +917,18 @@
 								<td style="line-height: 18px;">
 									Die Code: <input type="number" name="attr_weaponsandarmordice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_weaponsandarmorpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />						
-									MAP: <input type="number" name="attr_weaponsandarmorpenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
+									<div class="sheet-tooltip">
+										MAP:
+										<div class="sheet-right">
+											<div class="sheet-text-content">
+												<h3>Multi-Action Penalty (MAP)</h3>
+												<p>The total penalty applied to your action rolls based on the number of standard actions you wish to take.</p>
+												<p>Equal to the number of standard actions you are taking -1 (n - 1).</p>
+											</div>
+											<i></i>
+										</div>
+									</div>	 
+									<input type="number" name="attr_weaponsandarmorpenalty" class="sheet-smallnumber sheet-shortnumber" min="-99" max="0" value="0" />
 									<button type='roll' style="font-family: dicefontd6; padding-top: 2px" value='!wd [[(@{weaponsandarmordice} + @{weaponsandarmorpenalty})d6 + @{weaponsandarmorpip}]]'>F</button>
 								</td>
 							</tr>
