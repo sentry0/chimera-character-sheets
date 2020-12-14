@@ -55,13 +55,12 @@
 	width: 55%;
 }
 
-.sheet-attribute-name-cell > span {
+.sheet-attribute-name-cell > div > span {
 	font-size: 1.3em; 
 	vertical-align: top;
 }
 
-.sheet-skill-name-cell > span {
-	font-size: 1.3em; 
+.sheet-skill-name-cell > div > span {
 	vertical-align: top
 }
 
@@ -81,7 +80,7 @@
 	width: 55%;
 }
 
-.sheet-skill-name-cell > span {
+.sheet-skill-name-cell > div {
 	padding-left: 10px; 
 	font-size: 0.9em;
 }
@@ -288,9 +287,9 @@ button:active
 .sheet-tooltip h3 {
 	margin:12px 0;
 	color: #FEA600;
-	font-weight: 100;
+	font-weight: 700;
 	font-family: Orbitron;
-	font-size: 1.3em;
+	font-size: 1.5em;
 }
 
 .sheet-tooltip .sheet-text-content {
@@ -307,6 +306,7 @@ button:active
 }
 
 .sheet-tooltip .sheet-right {
+	font-family: 'Fira Sans';
     min-width:350px;
     max-width:600px;
     top:50%;
@@ -315,6 +315,8 @@ button:active
     transform:translate(0, -50%);
     padding:0;
     background-color:#444444;
+    font-weight:normal;
+    font-size:13px;
     border-radius:8px;
     position:absolute;
     z-index:99999999;
@@ -329,7 +331,7 @@ button:active
 	font-family: 'Fira Sans';
 	color:#EEEEEE;
 	font-weight:100;
-    font-size:1.1em;
+    font-size:1em;
 }
 
 .sheet-tooltip:hover .sheet-right {
