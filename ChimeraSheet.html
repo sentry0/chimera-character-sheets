@@ -134,6 +134,16 @@
 						</div>
 						<div class="sheet-attribute-table">
 							<div class="sheet-skill-name-cell">
+								<span>Lifting</span>
+							</div>
+							<div class="sheet-skill-die-code-cell">
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{liftingdice})d6 + (@{strengthpip} + @{liftingpip})]]'>
+									<span name="attr_liftingdice"></span><span>D+</span><span name="attr_liftingpip"></span>
+								</button>
+							</div>
+						</div>
+						<div class="sheet-attribute-table">
+							<div class="sheet-skill-name-cell">
 								<span>Running</span>
 							</div>
 							<div class="sheet-skill-die-code-cell">
@@ -1292,6 +1302,17 @@
 									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_jumpingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_jumpingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
+									</div>
+								</div>
+							</div>
+							<div class="sheet-attribute-table">
+								<div style="display: table-row;">
+									<div class="sheet-skill-name-cell">
+										<span>Lifting</span>
+									</div>
+									<div class="sheet-attribute-die-code-cell">
+										<input type="number" name="attr_liftingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
+										<input type="number" name="attr_liftingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
 							</div>
