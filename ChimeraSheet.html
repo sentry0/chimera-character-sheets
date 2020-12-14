@@ -102,188 +102,208 @@
 			<div class="sheet-3colrow">
 				<div name="Strength-Agility" class="sheet-col">
 					<div name="Strength" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Strength</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-attribute-name-cell">
+								<span>Strength</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right;">
+							<div class="sheet-attribute-die-code-cell">
 								<button type='roll' class="sheet-link-button" value='!wd [[@{strengthdice}d6 + @{strengthpip}]]'>
-									<span name="attr_strengthdice"></span>D+<span name="attr_strengthpip"></span>
+									<span name="attr_strengthdice"></span><span>D+</span><span name="attr_strengthpip"></span>
 								</button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">
-							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Climbing</span>
-								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{climbingdice})d6 + (@{strengthpip} + @{climbingpip})]]'>
-										<span name="attr_climbingdice"></span>D+<span name="attr_climbingpip"></span>
-									</button>
-								</div>
+						<div class="sheet-attribute-table">
+							<div class="sheet-skill-name-cell">
+								<span>Climbing</span>
 							</div>
-							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Jumping</span>
-								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">		
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{jumpingdice})d6 + (@{strengthpip} + @{jumpingpip})]]'>
-										<span name="attr_jumpingdice"></span>D+<span name="attr_jumpingpip"></span>
-									</button>
-								</div>
+							<div class="sheet-skill-die-code-cell">
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{climbingdice})d6 + (@{strengthpip} + @{climbingpip})]]'>
+									<span name="attr_climbingdice"></span><span>D+</span><span name="attr_climbingpip"></span>
+								</button>
 							</div>
-							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Running</span>
-								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{runningdice})d6 + (@{strengthpip} + @{runningpip})]]'>
-										<span name="attr_runningdice"></span>D+<span name="attr_runningpip"></span>
-									</button>
-								</div>
+						</div>
+						<div class="sheet-attribute-table">
+							<div class="sheet-skill-name-cell">
+								<span>Jumping</span>
 							</div>
-							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Swimming</span>
-								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{strengthdice} + @{swimmingdice})d6 + (@{strengthpip} + @{swimmingpip})]]'>
-										<span name="attr_swimmingdice"></span>D+<span name="attr_swimmingpip"></span>
-									</button>
-								</div>
+							<div class="sheet-skill-die-code-cell">
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{jumpingdice})d6 + (@{strengthpip} + @{jumpingpip})]]'>
+									<span name="attr_jumpingdice"></span><span>D+</span><span name="attr_jumpingpip"></span>
+								</button>
+							</div>
+						</div>
+						<div class="sheet-attribute-table">
+							<div class="sheet-skill-name-cell">
+								<span>Running</span>
+							</div>
+							<div class="sheet-skill-die-code-cell">
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{runningdice})d6 + (@{strengthpip} + @{runningpip})]]'>
+									<span name="attr_runningdice"></span><span>D+</span><span name="attr_runningpip"></span>
+								</button>
+							</div>
+						</div>
+						<div class="sheet-attribute-table">
+							<div class="sheet-skill-name-cell">
+								<span>Swimming</span>
+							</div>
+							<div class="sheet-skill-die-code-cell">
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{swimmingdice})d6 + (@{strengthpip} + @{swimmingpip})]]'>
+									<span name="attr_swimmingdice"></span><span>D+</span><span name="attr_swimmingpip"></span>
+								</button>
 							</div>
 						</div>
 					</div>
 					<div name="Agility" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Agility</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-attribute-name-cell">
+								<span>Agility</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right">
+							<div class="sheet-attribute-die-code-cell">
 								<button type='roll' class="sheet-link-button" value='!wd [[@{agility}d6 + @{agilitypip}]]'>
-									<span name="attr_agility"></span>D+<span name="attr_agilitypip"></span>
+									<span name="attr_agility"></span><span>D+</span><span name="attr_agilitypip"></span>
 								</button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Acrobatics</span>
+								<div class="sheet-skill-name-cell">
+									<span>Acrobatics</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{acrobaticsdice})d6 + (@{agilitypip} + @{acrobaticspip})]]'>
-										<span name="attr_acrobaticsdice"></span>D+<span name="attr_acrobaticspip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{acrobaticsdice})d6 + (@{agilitypip} + @{acrobaticspip})]]'>
+										<span name="attr_acrobaticsdice"></span><span>D+</span><span name="attr_acrobaticspip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Brawling</span>
+								<div class="sheet-skill-name-cell">
+									<span>Brawling</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{brawlingdice})d6 + (@{agilitypip} + @{brawlingpip})]]'>
-										<span name="attr_brawlingdice"></span>D+<span name="attr_brawlingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{brawlingdice})d6 + (@{agilitypip} + @{brawlingpip})]]'>
+										<span name="attr_brawlingdice"></span><span>D+</span><span name="attr_brawlingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Contortion</span>
+								<div class="sheet-skill-name-cell">
+									<span>Contortion</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{contortiondice})d6 + (@{agilitypip} + @{contortionpip})]]'>
-										<span name="attr_contortiondice"></span>D+<span name="attr_contortionpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{contortiondice})d6 + (@{agilitypip} + @{contortionpip})]]'>
+										<span name="attr_contortiondice"></span><span>D+</span><span name="attr_contortionpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Dodge</span>
+								<div class="sheet-skill-name-cell">
+									<span>Dodge</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{dodgedice})d6 + (@{agilitypip} + @{dodgepip})]]'>
-										<span name="attr_dodgedice"></span>D+<span name="attr_dodgepip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{dodgedice})d6 + (@{agilitypip} + @{dodgepip})]]'>
+										<span name="attr_dodgedice"></span><span>D+</span><span name="attr_dodgepip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Flying</span>
+								<div class="sheet-skill-name-cell">
+									<span>Flying</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{flyingdice})d6 + (@{agilitypip} + @{flyingpip})]]'>
-										<span name="attr_flyingdice"></span>D+<span name="attr_flyingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{flyingdice})d6 + (@{agilitypip} + @{flyingpip})]]'>
+										<span name="attr_flyingdice"></span><span>D+</span><span name="attr_flyingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Marksmanship</span>
+								<div class="sheet-skill-name-cell">
+									<span>Marksmanship</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">							
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{marksmanshipdice})d6 + (@{agilitypip} + @{marksmanshippip})]]'>
-										<span name="attr_marksmanshipdice"></span>D+<span name="attr_marksmanshippip"></span>
+								<div class="sheet-skill-die-code-cell">					
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{marksmanshipdice})d6 + (@{agilitypip} + @{marksmanshippip})]]'>
+										<span name="attr_marksmanshipdice"></span><span>D+</span><span name="attr_marksmanshippip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Missile Weapons</span>
+								<div class="sheet-skill-name-cell">
+									<span>Missile Weapons</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{missileweaponsdice})d6 + (@{agilitypip} + @{missileweaponspip})]]'>
-										<span name="attr_missileweaponsdice"></span>D+<span name="attr_missileweaponspip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{missileweaponsdice})d6 + (@{agilitypip} + @{missileweaponspip})]]'>
+										<span name="attr_missileweaponsdice"></span><span>D+</span><span name="attr_missileweaponspip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Melee Combat</span>
+								<div class="sheet-skill-name-cell">
+									<span>Melee Combat</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{meleecombatdice})d6 + (@{agilitypip} + @{meleecombatpip})]]'>
-										<span name="attr_meleecombatdice"></span>D+<span name="attr_meleecombatpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{meleecombatdice})d6 + (@{agilitypip} + @{meleecombatpip})]]'>
+										<span name="attr_meleecombatdice"></span><span>D+</span><span name="attr_meleecombatpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Riding</span>
+								<div class="sheet-skill-name-cell">
+									<span>Riding</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{ridingdice})d6 + (@{agilitypip} + @{ridingpip})]]'>
-										<span name="attr_ridingdice"></span>D+<span name="attr_ridingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{ridingdice})d6 + (@{agilitypip} + @{ridingpip})]]'>
+										<span name="attr_ridingdice"></span><span>D+</span><span name="attr_ridingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Sleight of Hand</span>
+								<div class="sheet-skill-name-cell">
+									<span>Sleight of Hand</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{sleightofhanddice})d6 + (@{agilitypip} + @{sleightofhandpip})]]'>
-										<span name="attr_sleightofhanddice"></span>D+<span name="attr_sleightofhandpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{sleightofhanddice})d6 + (@{agilitypip} + @{sleightofhandpip})]]'>
+										<span name="attr_sleightofhanddice"></span><span>D+</span><span name="attr_sleightofhandpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Sneak</span>
+								<div class="sheet-skill-name-cell">
+									<span>Sneak</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{sneakdice})d6 + (@{agilitypip} + @{sneakpip})]]'>
-										<span name="attr_sneakdice"></span>D+<span name="attr_sneakpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{sneakdice})d6 + (@{agilitypip} + @{sneakpip})]]'>
+										<span name="attr_sneakdice"></span><span>D+</span><span name="attr_sneakpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Throwing</span>
+								<div class="sheet-skill-name-cell">
+									<span>Throwing</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{agility} + @{throwingdice})d6 + (@{agilitypip} + @{throwingpip})]]'>
-										<span name="attr_throwingdice"></span>D+<span name="attr_throwingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{agility} + @{throwingdice})d6 + (@{agilitypip} + @{throwingpip})]]'>
+										<span name="attr_throwingdice"></span><span>D+</span><span name="attr_throwingpip"></span>
 									</button>
 								</div>
 							</div>
@@ -292,162 +312,180 @@
 				</div>
 				<div name="Stamina-Intellect-Spirit" class="sheet-col">
 					<div name="Stamina" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Stamina</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-attribute-name-cell">
+								<span>Stamina</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right">
+							<div class="sheet-attribute-die-code-cell">
 								<button type='roll' class="sheet-link-button" value='!wd [[@{stamina}d6 + @{staminapip}]]'>
-									<span name="attr_stamina"></span>D+<span name="attr_staminapip"></span>
+									<span name="attr_stamina"></span><span>D+</span><span name="attr_staminapip"></span>
 								</button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Fortitude</span>
+								<div class="sheet-skill-name-cell">
+									<span>Fortitude</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{stamina} + @{fortitudedice})d6 + (@{staminapip} + @{fortitudepip})]]'>
-										<span name="attr_fortitudedice"></span>D+<span name="attr_fortitudepip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{stamina} + @{fortitudedice})d6 + (@{staminapip} + @{fortitudepip})]]'>
+										<span name="attr_fortitudedice"></span><span>D+</span><span name="attr_fortitudepip"></span>
 									</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div name="Intellect" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Intellect</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-skill-name-cell">
+								<span>Intellect</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right">
+							<div class="sheet-attribute-die-code-cell">
 								<button type='roll' class="sheet-link-button" value='!wd [[@{intellect}d6 + @{intellectpip}]]'>
-									<span name="attr_intellect"></span>D+<span name="attr_intellectpip"></span>
+									<span name="attr_intellect"></span><span>D+</span><span name="attr_intellectpip"></span>
 								</button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Business</span>
+								<div class="sheet-skill-name-cell">
+									<span>Business</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{businessdice})d6 + (@{intellectpip} + @{businesspip})]]'>
-										<span name="attr_businessdice"></span>D+<span name="attr_businesspip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{businessdice})d6 + (@{intellectpip} + @{businesspip})]]'>
+										<span name="attr_businessdice"></span><span>D+</span><span name="attr_businesspip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Investigation</span>
+								<div class="sheet-skill-name-cell">
+									<span>Investigation</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{investigationdice})d6 + (@{intellectpip} + @{investigationpip})]]'>
-										<span name="attr_investigationdice"></span>D+<span name="attr_investigationpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{investigationdice})d6 + (@{intellectpip} + @{investigationpip})]]'>
+										<span name="attr_investigationdice"></span><span>D+</span><span name="attr_investigationpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Languages</span>
+								<div class="sheet-skill-name-cell">
+									<span>Languages</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{languagesdice})d6 + (@{intellectpip} + @{languagespip})]]'>
-										<span name="attr_languagesdice"></span>D+<span name="attr_languagespip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{languagesdice})d6 + (@{intellectpip} + @{languagespip})]]'>
+										<span name="attr_languagesdice"></span><span>D+</span><span name="attr_languagespip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Perception</span>
+								<div class="sheet-skill-name-cell">
+									<span>Perception</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{perceptiondice})d6 + (@{intellectpip} + @{perceptionpip})]]'>
-										<span name="attr_perceptiondice"></span>D+<span name="attr_perceptionpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{perceptiondice})d6 + (@{intellectpip} + @{perceptionpip})]]'>
+										<span name="attr_perceptiondice"></span><span>D+</span><span name="attr_perceptionpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Scholar</span>
+								<div class="sheet-skill-name-cell">
+									<span>Scholar</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{scholardice})d6 + (@{intellectpip} + @{scholarpip})]]'>
-										<span name="attr_scholardice"></span>D+<span name="attr_scholarpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{scholardice})d6 + (@{intellectpip} + @{scholarpip})]]'>
+										<span name="attr_scholardice"></span><span>D+</span><span name="attr_scholarpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Survival</span>
+								<div class="sheet-skill-name-cell">
+									<span>Survival</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{survivaldice})d6 + (@{intellectpip} + @{survivalpip})]]'>
-										<span name="attr_survivaldice"></span>D+<span name="attr_survivalpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{survivaldice})d6 + (@{intellectpip} + @{survivalpip})]]'>
+										<span name="attr_survivaldice"></span><span>D+</span><span name="attr_survivalpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Tracking</span>
+								<div class="sheet-skill-name-cell">
+									<span>Tracking</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{intellect} + @{trackingdice})d6 + (@{intellectpip} + @{trackingpip})]]'>
-										<span name="attr_trackingdice"></span>D+<span name="attr_trackingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{intellect} + @{trackingdice})d6 + (@{intellectpip} + @{trackingpip})]]'>
+										<span name="attr_trackingdice"></span><span>D+</span><span name="attr_trackingpip"></span>
 									</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div name="Spirit" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Spirit</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-attribute-name-cell">
+								<span>Spirit</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right">
+							<div class="sheet-attribute-die-code-cell">
 								<button type='roll' class="sheet-link-button" value='!wd [[@{spirit}d6 + @{spiritpip}]]'>
-									<span name="attr_spirit"></span>D+<span name="attr_spiritpip"></span>
+									<span name="attr_spirit"></span><span>D+</span><span name="attr_spiritpip"></span>
 								</button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Animal Handling</span>
+								<div class="sheet-skill-name-cell">
+									<span>Animal Handling</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{animalhandlingdice})d6 + (@{spiritpip} + @{animalhandlingpip})]]'>
-										<span name="attr_animalhandlingdice"></span>D+<span name="attr_animalhandlingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{spirit} + @{animalhandlingdice})d6 + (@{spiritpip} + @{animalhandlingpip})]]'>
+										<span name="attr_animalhandlingdice"></span><span>D+</span><span name="attr_animalhandlingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Artist</span>
+								<div class="sheet-skill-name-cell">
+									<span>Artist</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{artistdice})d6 + (@{spiritpip} + @{artistpip})]]'>
-										<span name="attr_artistdice"></span>D+<span name="attr_artistpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{spirit} + @{artistdice})d6 + (@{spiritpip} + @{artistpip})]]'>
+										<span name="attr_artistdice"></span><span>D+</span><span name="attr_artistpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Power</span>
+								<div class="sheet-skill-name-cell">
+									<span>Power</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{powerdice})d6 + (@{spiritpip} + @{powerpip})]]'>
-										<span name="attr_powerdice"></span>D+<span name="attr_powerpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{spirit} + @{powerdice})d6 + (@{spiritpip} + @{powerpip})]]'>
+										<span name="attr_powerdice"></span><span>D+</span><span name="attr_powerpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Willpower</span>
+								<div class="sheet-skill-name-cell">
+									<span>Willpower</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{spirit} + @{willpowerdice})d6 + (@{spiritpip} + @{willpowerpip})]]'>
-										<span name="attr_willpowerdice"></span>D+<span name="attr_willpowerpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{spirit} + @{willpowerdice})d6 + (@{spiritpip} + @{willpowerpip})]]'>
+										<span name="attr_willpowerdice"></span><span>D+</span><span name="attr_willpowerpip"></span>
 									</button>
 								</div>
 							</div>
@@ -456,196 +494,226 @@
 				</div>
 				<div name="Charm-Technology" class="sheet-col">
 					<div name="Charm" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Charm</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-attribute-name-cell">
+								<span>Charm</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right">
-								<button type='roll' class="sheet-link-button" value='!wd [[@{charm}d6 + @{charmpip}]]'><span name="attr_charm"></span>D+<span name="attr_charmpip"></span></button>
+							<div class="sheet-attribute-die-code-cell">
+								<button type='roll' class="sheet-link-button" value='!wd [[@{charm}d6 + @{charmpip}]]'><span name="attr_charm"></span><span>D+</span><span name="attr_charmpip"></span></button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Command</span>
+								<div class="sheet-skill-name-cell">
+									<span>Command</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{commanddice})d6 + (@{charmpip} + @{commandpip})]]'>
-										<span name="attr_commanddice"></span>D+<span name="attr_commandpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{commanddice})d6 + (@{charmpip} + @{commandpip})]]'>
+										<span name="attr_commanddice"></span><span>D+</span><span name="attr_commandpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Con</span>
+								<div class="sheet-skill-name-cell">
+									<span>Con</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{condice})d6 + (@{charmpip} + @{conpip})]]'>
-										<span name="attr_condice"></span>D+<span name="attr_conpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{condice})d6 + (@{charmpip} + @{conpip})]]'>
+										<span name="attr_condice"></span><span>D+</span><span name="attr_conpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Disguise</span>
+								<div class="sheet-skill-name-cell">
+									<span>Disguise</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{disguisedice})d6 + (@{charmpip} + @{disguisepip})]]'>
-										<span name="attr_disguisedice"></span>D+<span name="attr_disguisepip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{disguisedice})d6 + (@{charmpip} + @{disguisepip})]]'>
+										<span name="attr_disguisedice"></span><span>D+</span><span name="attr_disguisepip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Gambling</span>
+								<div class="sheet-skill-name-cell">
+									<span>Gambling</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{gamblingdice})d6 + (@{charmpip} + @{gamblingpip})]]'>
-										<span name="attr_gamblingdice"></span>D+<span name="attr_gamblingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{gamblingdice})d6 + (@{charmpip} + @{gamblingpip})]]'>
+										<span name="attr_gamblingdice"></span><span>D+</span><span name="attr_gamblingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Intimidation</span>
+								<div class="sheet-skill-name-cell">
+									<span>Intimidation</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{intimidationdice})d6 + (@{charmpip} + @{intimidationpip})]]'>
-										<span name="attr_intimidationdice"></span>D+<span name="attr_intimidationpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{intimidationdice})d6 + (@{charmpip} + @{intimidationpip})]]'>
+										<span name="attr_intimidationdice"></span><span>D+</span><span name="attr_intimidationpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Persuasion</span>
+								<div class="sheet-skill-name-cell">
+									<span>Persuasion</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{persuasiondice})d6 + (@{charmpip} + @{persuasionpip})]]'>
-										<span name="attr_persuasiondice"></span>D+<span name="attr_persuasionpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{persuasiondice})d6 + (@{charmpip} + @{persuasionpip})]]'>
+										<span name="attr_persuasiondice"></span><span>D+</span><span name="attr_persuasionpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Seduction</span>
+								<div class="sheet-skill-name-cell">
+									<span>Seduction</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{seductiondice})d6 + (@{charmpip} + @{seductionpip})]]'>
-										<span name="attr_seductiondice"></span>D+<span name="attr_seductionpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{seductiondice})d6 + (@{charmpip} + @{seductionpip})]]'>
+										<span name="attr_seductiondice"></span><span>D+</span><span name="attr_seductionpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Streetwise</span>
+								<div class="sheet-skill-name-cell">
+									<span>Streetwise</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{charm} + @{streetwisedice})d6 + (@{charmpip} + @{streetwisepip})]]'>
-										<span name="attr_streetwisedice"></span>D+<span name="attr_streetwisepip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{charm} + @{streetwisedice})d6 + (@{charmpip} + @{streetwisepip})]]'>
+										<span name="attr_streetwisedice"></span><span>D+</span><span name="attr_streetwisepip"></span>
 									</button>
 								</div>
 							</div>
 						</div>
 					</div>
 					<div name="Technology" class="sheet-bold" style="line-height: 1.75em">
-						<div style="display: table; width: 100%">
-							<div style="display: table-cell; width: 55%">
-								<span style="font-size: 1.3em; vertical-align: top">Technology</span>
+						<div class="sheet-attribute-table">
+							<div class="sheet-attribute-name-cell">
+								<span>Technology</span>
 							</div>
-							<div style="display: table-cell; width: 45%; text-align: right">
+							<div class="sheet-attribute-die-code-cell">
 								<button type='roll' class="sheet-link-button" value='!wd [[@{technology}d6 + @{technologypip}]]'>
-									<span name="attr_technology"></span>D+<span name="attr_technologypip"></span>
+									<span name="attr_technology"></span><span>D+</span><span name="attr_technologypip"></span>
 								</button>
 							</div>
 						</div>
-						<div style="display: table; width: 100%">				
+						<div class="sheet-attribute-table">				
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Demolitions</span>
+								<div class="sheet-skill-name-cell">
+									<span>Demolitions</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{demolitionsdice})d6 + (@{technologypip} + @{demolitionspip})]]'>
-										<span name="attr_demolitionsdice"></span>D+<span name="attr_demolitionspip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{demolitionsdice})d6 + (@{technologypip} + @{demolitionspip})]]'>
+										<span name="attr_demolitionsdice"></span><span>D+</span><span name="attr_demolitionspip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Forgery</span>
+								<div class="sheet-skill-name-cell">
+									<span>Forgery</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{forgerydice})d6 + (@{technologypip} + @{forgerypip})]]'>
-										<span name="attr_forgerydice"></span>D+<span name="attr_forgerypip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{forgerydice})d6 + (@{technologypip} + @{forgerypip})]]'>
+										<span name="attr_forgerydice"></span><span>D+</span><span name="attr_forgerypip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Lockpicking</span>
+								<div class="sheet-skill-name-cell">
+									<span>Lockpicking</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{lockpickingdice})d6 + (@{technologypip} + @{lockpickingpip})]]'>
-										<span name="attr_lockpickingdice"></span>D+<span name="attr_lockpickingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{lockpickingdice})d6 + (@{technologypip} + @{lockpickingpip})]]'>
+										<span name="attr_lockpickingdice"></span><span>D+</span><span name="attr_lockpickingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Medicine</span>
+								<div class="sheet-skill-name-cell">
+									<span>Medicine</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{medicinedice})d6 + (@{technologypip} + @{medicinepip})]]'>
-										<span name="attr_medicinedice"></span>D+<span name="attr_medicinepip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{medicinedice})d6 + (@{technologypip} + @{medicinepip})]]'>
+										<span name="attr_medicinedice"></span><span>D+</span><span name="attr_medicinepip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Navigation</span>
+								<div class="sheet-skill-name-cell">
+									<span>Navigation</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{navigationdice})d6 + (@{technologypip} + @{navigationpip})]]'>
-										<span name="attr_navigationdice"></span>D+<span name="attr_navigationpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{navigationdice})d6 + (@{technologypip} + @{navigationpip})]]'>
+										<span name="attr_navigationdice"></span><span>D+</span><span name="attr_navigationpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Piloting</span>
+								<div class="sheet-skill-name-cell">
+									<span>Piloting</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{pilotingdice})d6 + (@{technologypip} + @{pilotingpip})]]'>
-										<span name="attr_pilotingdice"></span>D+<span name="attr_pilotingpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{pilotingdice})d6 + (@{technologypip} + @{pilotingpip})]]'>
+										<span name="attr_pilotingdice"></span><span>D+</span><span name="attr_pilotingpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Repair</span>
+								<div class="sheet-skill-name-cell">
+									<span>Repair</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{repairdice})d6 + (@{technologypip} + @{repairpip})]]'>
-										<span name="attr_repairdice"></span>D+<span name="attr_repairpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{repairdice})d6 + (@{technologypip} + @{repairpip})]]'>
+										<span name="attr_repairdice"></span><span>D+</span><span name="attr_repairpip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Security</span>
+								<div class="sheet-skill-name-cell">
+									<span>Security</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{securitydice})d6 + (@{technologypip} + @{securitypip})]]'>
-										<span name="attr_securitydice"></span>D+<span name="attr_securitypip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{securitydice})d6 + (@{technologypip} + @{securitypip})]]'>
+										<span name="attr_securitydice"></span><span>D+</span><span name="attr_securitypip"></span>
 									</button>
 								</div>
 							</div>
+						</div>
+						<div class="sheet-attribute-table">
 							<div style="display: table-row;">
-								<div style="display: table-cell; width: 55%">
-									<span style="padding-left: 10px; font-size: 14px">Tech</span>
+								<div class="sheet-skill-name-cell">
+									<span>Tech</span>
 								</div>
-								<div style="display: table-cell; width: 45%; text-align: right; padding-right: 2px;">
-									<button type='roll' class="sheet-link-button" style="font-size: 14px" value='!wd [[(@{technology} + @{techdice})d6 + (@{technologypip} + @{techpip})]]'>
-										<span name="attr_techdice"></span>D+<span name="attr_techpip"></span>
+								<div class="sheet-skill-die-code-cell">
+									<button type='roll' class="sheet-link-button" value='!wd [[(@{technology} + @{techdice})d6 + (@{technologypip} + @{techpip})]]'>
+										<span name="attr_techdice"></span><span>D+</span><span name="attr_techpip"></span>
 									</button>
 								</div>
 							</div>
@@ -1192,48 +1260,58 @@
 				<div class="sheet-3colrow">
 					<div name="Strength-Agility" class="sheet-col">
 						<div name="Strength" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Strength</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Strength</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
-									<input type="number" name="attr_strengthdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
-									<input type="number" name="attr_strengthpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
+								<div class="sheet-attribute-die-code-cell">
+									<span>
+										<input type="number" name="attr_strengthdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
+										<input type="number" name="attr_strengthpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
+									</span>
 								</div>
 							</div>
-							<div style="display: table; width: 100%">
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Climbing</span>
+									<div class="sheet-skill-name-cell">
+										<span>Climbing</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
-										<input type="number" name="attr_climbingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
-										<input type="number" name="attr_climbingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
+									<div class="sheet-attribute-die-code-cell">
+										<span>
+											<input type="number" name="attr_climbingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
+											<input type="number" name="attr_climbingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
+										</span>
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Jumping</span>
+									<div class="sheet-skill-name-cell">
+										<span>Jumping</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_jumpingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_jumpingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Running</span>
+									<div class="sheet-skill-name-cell">
+										<span>Running</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_runningdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_runningpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Swimming</span>
+									<div class="sheet-skill-name-cell">
+										<span>Swimming</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_swimmingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_swimmingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
@@ -1241,120 +1319,142 @@
 							</div>
 						</div>
 						<div name="Agility" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Agility</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Agility</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
+								<div class="sheet-attribute-die-code-cell">
 									<input type="number" name="attr_agility" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_agilitypip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
-							<div style="display: table; width: 100%">
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Acrobatics</span>
+									<div class="sheet-skill-name-cell">
+										<span>Acrobatics</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_acrobaticsdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_acrobaticspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Brawling</span>
+									<div class="sheet-skill-name-cell">
+										<span>Brawling</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_brawlingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_brawlingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Contortion</span>
+									<div class="sheet-skill-name-cell">
+										<span>Contortion</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_contortiondice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_contortionpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Dodge</span>
+									<div class="sheet-skill-name-cell">
+										<span>Dodge</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_dodgedice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_dodgepip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Flying</span>
+									<div class="sheet-skill-name-cell">
+										<span>Flying</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_flyingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_flyingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Marksmanship</span>
+									<div class="sheet-skill-name-cell">
+										<span>Marksmanship</span>
 									</div>
-									<div style="display: table-cell; width: 45%">							
+									<div class="sheet-attribute-die-code-cell">							
 										<input type="number" name="attr_marksmanshipdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_marksmanshippip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Missile Weapons</span>
+									<div class="sheet-skill-name-cell">
+										<span>Missile Weapons</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_missileweaponsdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_missileweaponspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Melee Combat</span>
+									<div class="sheet-skill-name-cell">
+										<span>Melee Combat</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_meleecombatdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_meleecombatpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Riding</span>
+									<div class="sheet-skill-name-cell">
+										<span>Riding</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_ridingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_ridingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Sleight of Hand</span>
+									<div class="sheet-skill-name-cell">
+										<span>Sleight of Hand</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_sleightofhanddice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_sleightofhandpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Sneak</span>
+									<div class="sheet-skill-name-cell">
+										<span>Sneak</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_sneakdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_sneakpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Throwing</span>
+									<div class="sheet-skill-name-cell">
+										<span>Throwing</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_throwingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_throwingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
@@ -1364,21 +1464,21 @@
 					</div>
 					<div name="Stamina-Intellect-Spirit" class="sheet-col">
 						<div name="Stamina" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Stamina</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Stamina</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
+								<div class="sheet-attribute-die-code-cell">
 									<input type="number" name="attr_stamina" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_staminapip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
-							<div style="display: table; width: 100%">
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Fortitude</span>
+									<div class="sheet-skill-name-cell">
+										<span>Fortitude</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_fortitudedice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_fortitudepip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
@@ -1386,75 +1486,87 @@
 							</div>
 						</div>
 						<div name="Intellect" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Intellect</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Intellect</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
+								<div class="sheet-attribute-die-code-cell">
 									<input type="number" name="attr_intellect" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_intellectpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
-							<div style="display: table; width: 100%">
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Business</span>
+									<div class="sheet-skill-name-cell">
+										<span>Business</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_businessdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_businesspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Investigation</span>
+									<div class="sheet-skill-name-cell">
+										<span>Investigation</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_investigationdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_investigationpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Languages</span>
+									<div class="sheet-skill-name-cell">
+										<span>Languages</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_languagesdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_languagespip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Perception</span>
+									<div class="sheet-skill-name-cell">
+										<span>Perception</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_perceptiondice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_perceptionpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Scholar</span>
+									<div class="sheet-skill-name-cell">
+										<span>Scholar</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_scholardice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_scholarpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Survival</span>
+									<div class="sheet-skill-name-cell">
+										<span>Survival</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_survivaldice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_survivalpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Tracking</span>
+									<div class="sheet-skill-name-cell">
+										<span>Tracking</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_trackingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_trackingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
@@ -1462,48 +1574,54 @@
 							</div>
 						</div>
 						<div name="Spirit" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Spirit</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Spirit</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
+								<div class="sheet-attribute-die-code-cell">
 									<input type="number" name="attr_spirit" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_spiritpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
-							<div style="display: table; width: 100%">
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Animal Handling</span>
+									<div class="sheet-skill-name-cell">
+										<span>Animal Handling</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_animalhandlingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_animalhandlingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Artist</span>
+									<div class="sheet-skill-name-cell">
+										<span>Artist</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_artistdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_artistpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Power</span>
+									<div class="sheet-skill-name-cell">
+										<span>Power</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_powerdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_powerpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Willpower</span>
+									<div class="sheet-skill-name-cell">
+										<span>Willpower</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_willpowerdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_willpowerpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
@@ -1513,84 +1631,98 @@
 					</div>
 					<div name="Charm-Technology" class="sheet-col">
 						<div name="Charm" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Charm</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Charm</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
+								<div class="sheet-attribute-die-code-cell">
 									<input type="number" name="attr_charm" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_charmpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
-							<div style="display: table; width: 100%">
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Command</span>
+									<div class="sheet-skill-name-cell">
+										<span>Command</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_commanddice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_commandpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Con</span>
+									<div class="sheet-skill-name-cell">
+										<span>Con</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_condice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_conpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Disguise</span>
+									<div class="sheet-skill-name-cell">
+										<span>Disguise</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_disguisedice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_disguisepip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Gambling</span>
+									<div class="sheet-skill-name-cell">
+										<span>Gambling</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_gamblingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_gamblingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Intimidation</span>
+									<div class="sheet-skill-name-cell">
+										<span>Intimidation</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_intimidationdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_intimidationpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Persuasion</span>
+									<div class="sheet-skill-name-cell">
+										<span>Persuasion</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_persuasiondice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_persuasionpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Seduction</span>
+									<div class="sheet-skill-name-cell">
+										<span>Seduction</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_seductiondice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_seductionpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Streetwise</span>
+									<div class="sheet-skill-name-cell">
+										<span>Streetwise</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_streetwisedice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_streetwisepip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
@@ -1598,93 +1730,109 @@
 							</div>
 						</div>
 						<div name="Technology" class="sheet-bold" style="line-height: 1.75em">
-							<div style="display: table; width: 100%">
-								<div style="display: table-cell; width: 55%">
-									<span style="font-size: 1.3em; vertical-align: top">Technology</span>
+							<div class="sheet-attribute-table">
+								<div class="sheet-attribute-name-cell">
+									<span>Technology</span>
 								</div>
-								<div style="display: table-cell; width: 45%">
+								<div class="sheet-attribute-die-code-cell">
 									<input type="number" name="attr_technology" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_technologypip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
-							<div style="display: table; width: 100%">				
+							<div class="sheet-attribute-table">				
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Demolitions</span>
+									<div class="sheet-skill-name-cell">
+										<span>Demolitions</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_demolitionsdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_demolitionspip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Forgery</span>
+									<div class="sheet-skill-name-cell">
+										<span>Forgery</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_forgerydice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_forgerypip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Lockpicking</span>
+									<div class="sheet-skill-name-cell">
+										<span>Lockpicking</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_lockpickingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_lockpickingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Medicine</span>
+									<div class="sheet-skill-name-cell">
+										<span>Medicine</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_medicinedice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_medicinepip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Navigation</span>
+									<div class="sheet-skill-name-cell">
+										<span>Navigation</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_navigationdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_navigationpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Piloting</span>
+									<div class="sheet-skill-name-cell">
+										<span>Piloting</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_pilotingdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_pilotingpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Repair</span>
+									<div class="sheet-skill-name-cell">
+										<span>Repair</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_repairdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_repairpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Security</span>
+									<div class="sheet-skill-name-cell">
+										<span>Security</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_securitydice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_securitypip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>
 								</div>
+							</div>
+							<div class="sheet-attribute-table">
 								<div style="display: table-row;">
-									<div style="display: table-cell; width: 55%">
-										<span style="padding-left: 10px; font-size: 14px">Tech</span>
+									<div class="sheet-skill-name-cell">
+										<span>Tech</span>
 									</div>
-									<div style="display: table-cell; width: 45%">
+									<div class="sheet-attribute-die-code-cell">
 										<input type="number" name="attr_techdice" class="sheet-smallnumber sheet-shortnumber" min="0" value="0" />D+
 										<input type="number" name="attr_techpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 									</div>

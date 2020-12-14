@@ -41,6 +41,58 @@
 	padding-bottom: 20px;
 }
 
+.sheet-attribute-table {
+	display: table; 
+	width: 100%;
+}
+
+.sheet-attribute-table:hover {
+	background: rgba(255, 239, 10, 0.3);
+}
+
+.sheet-attribute-name-cell {
+	display: table-cell; 
+	width: 55%;
+}
+
+.sheet-attribute-name-cell > span {
+	font-size: 1.3em; 
+	vertical-align: top;
+}
+
+.sheet-skill-name-cell > span {
+	font-size: 1.3em; 
+	vertical-align: top
+}
+
+.sheet-attribute-die-code-cell {
+	display: table-cell; 
+	width: 45%; 
+	text-align: right;
+}
+
+.sheet-attribute-die-code-cell > span {
+	padding-left: 10px; 
+	font-size: 14px
+}
+
+.sheet-skill-name-cell {
+	display: table-cell; 
+	width: 55%;
+}
+
+.sheet-skill-name-cell > span {
+	padding-left: 10px; 
+	font-size: 0.9em;
+}
+
+.sheet-skill-die-code-cell {
+	display: table-cell; 
+	width: 45%; 
+	text-align: right; 
+	padding-right: 2px;
+}
+
 .charsheet th {
 	font-size: 1.3em;
 	font-weight: 700;
@@ -54,6 +106,10 @@ table.sheet-list {
 
 .sheet-nested-table td {
 	border-bottom: 1px solid black;
+}
+
+.sheet-nested-table tr:hover {
+	background: rgba(255, 239, 10, 0.3);
 }
 
 .sheet-block-a,
@@ -121,8 +177,13 @@ button:active
   text-shadow: none;
 }
 
+.sheet-skill-die-code-cell > .sheet-link-button > span {
+	font-size: 0.7em;
+}
+
 .sheet-link-button:hover {
 	color: #fff1a8;
+	text-decoration: underline;
 }
 
 .charsheet textarea{
