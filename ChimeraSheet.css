@@ -325,6 +325,7 @@ button:active
     visibility:hidden; 
 	opacity:0; 
 	transition:opacity 0.8s;
+	transition-delay: 0.6s;
 }
 
 .sheet-tooltip .sheet-text-content > p {
@@ -381,6 +382,7 @@ button:active
     visibility:hidden; 
 	opacity:0; 
 	transition:opacity 0.8s;
+	transition-delay: 0.6s;
 }
 
 .sheet-tooltip:hover .sheet-left {
