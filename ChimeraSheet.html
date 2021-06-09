@@ -3,25 +3,17 @@
 	<div class="sheet-block-a">
 		<div style="display: table; width: 100%;">
 			<div style="display: table-row">
-				<div style="display: table-cell; width: 40%">
-					<img src="https://github.com/sentry0/chimera-character-sheets/blob/main/The-Chimera-System-logo-black-web.png?raw=true" width="280" />
+				<div style="display: table-cell; width: 30%;">
+					<img src="https://slackdaystudio.files.wordpress.com/2021/06/the-chimera-system-logo-black-web.png" width="220" />
 				</div>
-				<div style="display: table-cell; width: 60%; vertical-align: middle;">
-					<table style="width:100%">
+				<div style="display: table-cell; width: 45%; vertical-align: top">
+					<table style="width:99%">
 						<tr>
 							<td style="width: 25%">
 								<label>Name:</label>
 							</td>
 							<td style="width: 75%">
 								<span name="attr_charactername" />
-							</td>
-						</tr>
-						<tr>
-							<td style="width: 25%">
-								<label>Player:</label>
-							</td>
-							<td style="width: 75%">
-								<span name="attr_player" /> 
 							</td>
 						</tr>
 						<tr>
@@ -40,25 +32,96 @@
 								<span name="attr_species" />
 							</td>
 						</tr>
-					</table>
-					<br />
-					<table style="width: 100%">
 						<tr>
-							<td>
+							<td style="width: 25%">
 								<label>Gender:</label>
+							</td>
+							<td style="width: 75%">
 								<span name="attr_gender" />
 							</td>
-							<td>
+						</tr>
+						<tr>
+							<td style="width: 25%">
 								<label>Age:</label>
+							</td>
+							<td style="width: 75%">
 								<span name="attr_age" />
 							</td>
-							<td>
+						</tr>
+						<tr>
+							<td style="width: 25%">
 								<label>Height:</label>
+							</td>
+							<td style="width: 75%">
 								<span name="attr_height" />
 							</td>
-							<td>
+						</tr>
+						<tr>
+							<td style="width: 25%">
 								<label>Weight:</label>
+							</td>
+							<td style="width: 75%">
 								<span name="attr_weight" />
+							</td>
+						</tr>
+					</table>					
+				</div>
+				<div style="display: table-cell; width: 25%; vertical-align: top">
+					<table style="width:99%">
+						<tr>
+							<td style="width: 75%">
+								<label>Attributes:</label>
+							</td>
+							<td style="width: 25%; text-align: right">
+								<span name="attr_attributepoints" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 75%">
+								<label>Skills:</label>
+							</td>
+							<td style="width: 25%; text-align: right">
+								<span name="attr_skillpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 75%">
+								<label>Specializations:</label>
+							</td>
+							<td style="width: 25%; text-align: right">
+								<span name="attr_specializationpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 75%">
+								<label>Advantages:</label>
+							</td>
+							<td style="width: 25%; text-align: right">
+								<span name="attr_advantagepoints" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 75%">
+								<label>Powers:</label>
+							</td>
+							<td style="width: 25%; text-align: right">
+								<span name="attr_powerpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 75%">
+								<label>Martial Arts:</label>
+							</td>
+							<td style="width: 25%; text-align: right">
+								<span name="attr_martialartpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td style="width: 75%;">
+								&nbsp;
+							</td>
+							<td style="width: 25%; text-align: right; border-top-style: 1px dashed black;">
+								<span name="attr_totalpoints" />
 							</td>
 						</tr>
 					</table>					
@@ -116,8 +179,8 @@
 								</div>
 							</div>
 							<div class="sheet-attribute-die-code-cell">
-								<button type='roll' class="sheet-link-button" value='!wd [[@{strengthdice}d6 + @{strengthpip}]]'>
-									<span name="attr_strengthdice"></span><span>D+</span><span name="attr_strengthpip"></span>
+								<button type='roll' class="sheet-link-button" value='!wd [[@{strength}d6 + @{strengthpip}]]'>
+									<span name="attr_strength"></span><span>D+</span><span name="attr_strengthpip"></span>
 								</button>
 							</div>
 						</div>
@@ -135,7 +198,7 @@
 								</div>
 							</div>
 							<div class="sheet-skill-die-code-cell">
-								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{climbingdice})d6 + (@{strengthpip} + @{climbingpip})]]'>
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strength} + @{climbingdice})d6 + (@{strengthpip} + @{climbingpip})]]'>
 									<span name="attr_climbingdice"></span><span>D+</span><span name="attr_climbingpip"></span>
 								</button>
 							</div>
@@ -154,7 +217,7 @@
 								</div>
 							</div>
 							<div class="sheet-skill-die-code-cell">
-								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{jumpingdice})d6 + (@{strengthpip} + @{jumpingpip})]]'>
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strength} + @{jumpingdice})d6 + (@{strengthpip} + @{jumpingpip})]]'>
 									<span name="attr_jumpingdice"></span><span>D+</span><span name="attr_jumpingpip"></span>
 								</button>
 							</div>
@@ -173,7 +236,7 @@
 								</div>
 							</div>
 							<div class="sheet-skill-die-code-cell">
-								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{liftingdice})d6 + (@{strengthpip} + @{liftingpip})]]'>
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strength} + @{liftingdice})d6 + (@{strengthpip} + @{liftingpip})]]'>
 									<span name="attr_liftingdice"></span><span>D+</span><span name="attr_liftingpip"></span>
 								</button>
 							</div>
@@ -192,7 +255,7 @@
 								</div>
 							</div>
 							<div class="sheet-skill-die-code-cell">
-								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{runningdice})d6 + (@{strengthpip} + @{runningpip})]]'>
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strength} + @{runningdice})d6 + (@{strengthpip} + @{runningpip})]]'>
 									<span name="attr_runningdice"></span><span>D+</span><span name="attr_runningpip"></span>
 								</button>
 							</div>
@@ -211,7 +274,7 @@
 								</div>
 							</div>
 							<div class="sheet-skill-die-code-cell">
-								<button type='roll' class="sheet-link-button" value='!wd [[(@{strengthdice} + @{swimmingdice})d6 + (@{strengthpip} + @{swimmingpip})]]'>
+								<button type='roll' class="sheet-link-button" value='!wd [[(@{strength} + @{swimmingdice})d6 + (@{strengthpip} + @{swimmingpip})]]'>
 									<span name="attr_swimmingdice"></span><span>D+</span><span name="attr_swimmingpip"></span>
 								</button>
 							</div>
@@ -1346,23 +1409,91 @@
 				</tr>
 			</table>
 		</div>	
-		<div name="characterfeatures" class="sheet-section">
+		<div name="Advantages" class="sheet-section">
 			<div class="sheet-heading">
-				Advantages &amp; Disadvantages
+				Advantages
 			</div>		
 			<br />
-			<div class="sheet-2colrow">
-				<div name="Advantages" class="sheet-col">
-					<label class="sheet-areaLabel">Advantages:</label>
-					<br />
-					<span name="attr_advantages" style="height:100px; width:400px; white-space: pre-line;"></span>
-				</div>
-				<div name="Disadvantages" class="sheet-col">
-					<label class="sheet-areaLabel">Disadvantages:</label> 
-					<br />
-					<span name="attr_disadvantages" style="height:100px; width:400px; white-space: pre-line;"></span>
-				</div>
-			</div>
+			<table style="width: 100%" class="sheet-list">
+				<thead>
+					<tr>
+						<th style="width: 30%;">Name</th>
+						<th style="width: 65%;">Details</th>
+						<th style="width: 5%; text-align: center">Cost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="3">
+							<table width="100%" class="sheet-nested-table">
+								<tr>
+									<td valign="top" style="width: 30%;"><span name="attr_advantagename"></span></td>
+									<td valign="top" style="width: 65%;"><span name="attr_advantagedetails"></span></td>
+									<td valign="top" style="width: 5%; text-align: center;"><span name="attr_advantagecost"></span></td>											
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<fieldset class="repeating_addadvantages">
+								<table style="width: 100%; border-spacing:1px" class="sheet-nested-table">
+									<tbody>					
+										<tr>
+											<td valign="top" style="width: 30%;"><span name="attr_addadvantagename"></span></td>
+											<td valign="top" style="width: 65%;"><span name="attr_addadvantagedetails"></span></td>
+											<td valign="top" style="width: 5%; text-align: center;"><span name="attr_addadvantagecost"></span></td>
+										</tr>
+									</tbody>
+								</table>	
+							</fieldset>	
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div name="Disadvantages" class="sheet-section">
+			<div class="sheet-heading">
+				Disadvantages
+			</div>		
+			<br />
+			<table style="width: 100%" class="sheet-list">
+				<thead>
+					<tr>
+						<th style="width: 30%;">Name</th>
+						<th style="width: 65%;">Details</th>
+						<th style="width: 5%; text-align: center">Cost</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="3">
+							<table width="100%" class="sheet-nested-table">
+								<tr>
+									<td valign="top" style="width: 30%;"><span name="attr_disadvantagename"></span></td>
+									<td valign="top" style="width: 65%;"><span name="attr_disadvantagedetails"></span></td>
+									<td valign="top" style="width: 5%; text-align: center;"><span name="attr_disadvantagecost"></span></td>											
+								</tr>
+							</table>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="3">
+							<fieldset class="repeating_adddisadvantages">
+								<table style="width: 100%; border-spacing:1px" class="sheet-nested-table">
+									<tbody>					
+										<tr>
+											<td valign="top" style="width: 30%;"><span name="attr_adddisadvantagename"></span></td>
+											<td valign="top" style="width: 65%;"><span name="attr_adddisadvantagedetails"></span></td>
+											<td valign="top" style="width: 5%; text-align: center;"><span name="attr_adddisadvantagecost"></span></td>
+										</tr>
+									</tbody>
+								</table>	
+							</fieldset>	
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 		<div name="Powers" class="sheet-section sheet-die-roller-tab">
 			<div style="padding-bottom: 10px">
@@ -1481,40 +1612,43 @@
 					<table style="width: 100%" class="sheet-list">
 						<thead>
 							<tr>
-								<th style="width: 40%;">Name</th>
-								<th style="width: 40%;">Maneuver</th>
+								<th style="width: 38%;">Name</th>
 								<th style="width: 4%; text-align: center">C</th>
 								<th style="width: 4%; text-align: center">S</th>
 								<th style="width: 4%; text-align: center">E</th>
+								<th style="width: 4%; text-align: center">R</th>
 								<th style="width: 8%; text-align: center">D</th>
+								<th style="width: 38%;">Notes</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td colspan="6">
+								<td colspan="7">
 									<table style="width: 100%" class="sheet-nested-table">
 										<tr>
-											<td style="width: 40%;"><span name="attr_movename"></span></td>
-											<td style="width: 40%;"><span name="attr_maneuvername"></span></td>
+											<td style="width: 38%;"><span name="attr_movename"></span></td>
 											<td style="width: 4%; text-align: center"><span name="attr_movecost"></span></td>
 											<td style="width: 4%; text-align: center"><span name="attr_strikebonus"></span></td>
 											<td style="width: 4%; text-align: center"><span name="attr_evasionbonus"></span></td>
+											<td style="width: 4%; text-align: center"><span name="attr_rangebonus"></span></td>
 											<td style="width: 8%; text-align: center"><span name="attr_movedamage"></span></td>
+											<td style="width: 38%;"><span name="attr_movenotes"></span></td>
 										</tr>
 									</table>
 								</td>
 							</tr>
 							<tr>
-								<td colspan="6">
+								<td colspan="7">
 									<fieldset class="repeating_addmoves">
 										<table style="width: 100%" class="sheet-nested-table">				
 											<tr>
-												<td style="width: 40%;"><span name="attr_addmovename"></span></td>
-												<td style="width: 40%;"><span name="attr_addmaneuvername"></span></td>
+												<td style="width: 38%;"><span name="attr_addmovename"></span></td>
 												<td style="width: 4%; text-align: center;"><span name="attr_addmovecost"></span></td>
 												<td style="width: 4%; text-align: center;"><span name="attr_addstrikebonus"></span></td>
 												<td style="width: 4%; text-align: center;"><span name="attr_addevasionbonus"></span></td>
+												<td style="width: 4%; text-align: center;"><span name="attr_addrangebonus"></span></td>
 												<td style="width: 8%;; text-align: center"><span name="attr_addmovedamage"></span></td>
+												<td style="width: 38%;"><span name="attr_addmovenotes"></span></td>
 											</tr>
 										</table>	
 									</fieldset>
@@ -1525,7 +1659,7 @@
 				</div>
 			</div>
 		</div>
-		<div name="weapons" class="sheet-section">
+		<div name="equipment" class="sheet-section">
 			<div style="padding-bottom: 10px">
 				<div class="sheet-heading sheet-die-roller-tab">
 					Equipment
@@ -1556,190 +1690,118 @@
 					</div>
 				</div>
 			</div>
-			<div class='sheet-colrow'>
-				<div name="armor" class="sheet-row">
-					<div class="sheet-subheading">
-						Armors
-					</div>
-					<table style="width: 100%" class="sheet-list">
-						<tr>
-							<th style="width: 30%">Type</th>
-							<th style="width: 10%; text-align: center;">Soak</th>
-							<th style="width: 10%; text-align: center;">Penalty</th>
-							<th style="width: 50%">Notes</th>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<table style="width: 100%" class="sheet-nested-table">
-									<tr>
-										<td style="width: 30%"><span name="attr_armortype"></span></td>
-										<td style="width: 10%; text-align: center;"><span name="attr_soakvalue"></span></td>
-										<td style="width: 10%; text-align: center;"><span name="attr_penaltyvalue"></span></td>
-										<td style="width: 50%"><span name="attr_armornotes"></span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="4">
-								<fieldset class="repeating_addarmor">
-									<table style="width: 100%" class="sheet-nested-table">
-										<tr>
-											<td style="width: 30%"><span name="attr_addarmortype"></span></td>
-											<td style="width: 10%; text-align: center;"><span name="attr_addsoakvalue"></span></td>
-											<td style="width: 10%; text-align: center;"><span name="attr_addpenaltyvalue"></span></td>
-											<td style="width: 50%"><span name="attr_addarmornotes"></span></td>
-										</tr>
-									</table>
-								</fieldset>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<br />
-				<div name="weapon" class="sheet-row">
-					<div class="sheet-subheading">
-						Weapons
-					</div>
-					<table style="width: 100%" class="sheet-list">
-						<tr>
-							<th style="width: 30%">Type</th>
-							<th style="width: 10%; text-align: center;">Damage</th>
-							<th style="width: 10%; text-align: center;">Range</th>
-							<th style="width: 10%; text-align: center;">Ammo</th>
-							<th style="width: 40%">Notes</th>
-						</tr>
-						<tr>
-							<td colspan="5">
-								<table style="width: 100%" class="sheet-nested-table">
-									<tr>
-										<td style="width: 30%"><span name="attr_weapontype"></span></td>
-										<td style="width: 10%; text-align: center;"><span name="attr_dmg"></span>D+<span name="attr_dmgpip"></span></td>
-										<td style="width: 10%; text-align: center;"><span name="attr_range"></span></td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_ammo" class="sheet-smallnumber" min="0" value="0" /></td>
-										<td style="width: 40%"><span name="attr_addarmornotes"></span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="5">
-								<fieldset class="repeating_addweapon">
-									<table style="width: 100%" class="sheet-nested-table">
-										<tr>
-											<td style="width: 30%"><span name="attr_addweapontype"></span></td>
-											<td style="width: 10%; text-align: center;"><span name="attr_adddmg"></span>D+<span name="attr_adddmgpip"></span></td>
-											<td style="width: 10%; text-align: center;"><span name="attr_addrange"></span></td>
-											<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_addammo" class="sheet-smallnumber" min="0" value="0" /></td>
-											<td style="width: 40%"><span name="attr_addarmornotes"></span></td>
-										</tr>
-									</table>
-								</fieldset>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<br />
-				<div class="sheet-colrow">
-					<div class="sheet-subheading">
-						Equipment
-					</div>
-					<table style="width: 100%" class="sheet-list">
-						<tr>
-							<th style="width: 40%">Type</th>
-							<th style="width: 60%">Notes</th>
-						</tr>
-						<tr>
-							<td colspan="5">
-								<table style="width: 100%" class="sheet-nested-table">
-									<tr>
-										<td style="width: 40%"><span name="attr_equip"></span></td>
-										<td style="width: 60%"><span name="attr_equipnotes"></span></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="5">
-								<fieldset class="repeating_addequip">
-									<table style="width: 100%" class="sheet-nested-table">
-										<tr>
-											<td style="width: 40%"><span name="attr_addequip"></span></td>
-											<td style="width: 60%"><span name="attr_addequipnotes"></span></td>
-										</tr>
-									</table>
-								</fieldset>
-							</td>
-						</tr>
-					</table>
-				</div>
+			<br />
+			<div style="white-space: pre-line;">
+				<span name="attr_equipment"></span>
 			</div>
 		</div>
-		<div name="wealth" class="sheet-section">
+		<div name="notes" class="sheet-section">
 			<div class="sheet-heading">
-				Wealth
+				Notes
 			</div>
-			<div class='sheet-colrow' style="white-space: pre-line;">
-				<span name="attr_wealth"></span>
+			<div style="white-space: pre-line;">
+				<span name="attr_notes"></span>
 			</div>
 		</div>
 	</div>
 	<div class="sheet-block-b">
 		<div style="display: table; width: 100%;">
 			<div style="display: table-row">
-				<div style="display: table-cell; width: 40%">
-					<img src="https://github.com/sentry0/chimera-character-sheets/blob/main/The-Chimera-System-logo-black-web.png?raw=true" width="280" />
+				<div style="display: table-cell; width: 30%">
+					<img src="https://slackdaystudio.files.wordpress.com/2021/06/the-chimera-system-logo-black-web.png" width="220" />
 				</div>
-				<div style="display: table-cell; width: 60%; vertical-align: middle;">
-					<table style="width:100%">
+				<div style="display: table-cell; width: 45%; vertical-align: top">
+					<table style="width:99%">
 						<tr>
 							<td>
 								<label>Name:</label> 
-								<input class="sheet-right sheet-shorttext" type="text" name="attr_charactername" style="width:75%;" />
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<label>Player:</label> 
-								<input class="sheet-right sheet-shorttext" type="text" name="attr_player" style="width:75%;" /> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_charactername" style="width:50%;" />
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<label>Occupation:</label> 
-								<input class="sheet-right sheet-shorttext" type="text" name="attr_occupation" style="width:75%;" /> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_occupation" style="width:50%;" /> 
 							</td>
 						</tr>
 						<tr>
 							<td>
 								<label>Species:</label> 
-								<input class="sheet-right sheet-shorttext" style="width:75%;" type="text" name="attr_species" />
+								<input class="sheet-right sheet-shorttext" style="width:50%;" type="text" name="attr_species" />
 							</td>
 						</tr>
-					</table>
-					<br />
-					<table style="width: 100%">
 						<tr>
-							<td style="vertical-align: center">
+							<td>
 								<label>Gender:</label> 
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_gender" />
+								<input class="sheet-right sheet-shorttext" style="width:50%;" type="text" name="attr_gender" />
 							</td>
-							<td style="vertical-align: center">
+						</tr>
+						<tr>
+							<td>
 								<label>Age:</label> 
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_age" />
+								<input class="sheet-right sheet-shorttext" style="width:50%;" type="text" name="attr_age" />
 							</td>
-							<td style="vertical-align: center">
+						</tr>
+						<tr>
+							<td>
 								<label>Height:</label> 
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_height" />
+								<input class="sheet-right sheet-shorttext" style="width:50%;" type="text" name="attr_height" />
 							</td>
-							<td style="vertical-align: center">
+						</tr>
+						<tr>
+							<td>
 								<label>Weight:</label> 
-								<input class="sheet-smalltext sheet-shorttext" type="text" name="attr_weight" />
+								<input class="sheet-right sheet-shorttext" style="width:50%;" type="text" name="attr_weight" />
 							</td>
 						</tr>
 					</table>					
 				</div>
-			</div>	
+				<div style="display: table-cell; width: 25%; vertical-align: top">
+					<table style="width:99%">
+						<tr>
+							<td>
+								<label>Attributes:</label> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_attributepoints" style="width:25%;" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Skills:</label> 
+								<input class="sheet-right sheet-shorttext" type="text" name="attr_skillpoints" style="width:25%;" /> 
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Specializations:</label> 
+								<input class="sheet-right sheet-shorttext" style="width:25%;" type="text" name="attr_specializationpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Advantages:</label> 
+								<input class="sheet-right sheet-shorttext" style="width:25%;" type="text" name="attr_advantagepoints" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Powers:</label> 
+								<input class="sheet-right sheet-shorttext" style="width:25%;" type="text" name="attr_powerpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Martial Arts:</label> 
+								<input class="sheet-right sheet-shorttext" style="width:25%;" type="text" name="attr_martialartpoints" />
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<input class="sheet-right sheet-shorttext" style="width:25%;" type="text" name="attr_totalpoints" />
+							</td>
+						</tr>
+					</table>					
+				</div>
+			</div>
 		</div>
 		<div class="sheet-section">
 			<div style="padding-bottom: 10px">
@@ -1765,7 +1827,7 @@
 									</div>
 								</div>
 								<div class="sheet-attribute-die-code-cell">
-									<input type="number" name="attr_strengthdice" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
+									<input type="number" name="attr_strength" class="sheet-smallnumber sheet-shortnumber" min="1" value="2" />D+
 									<input type="number" name="attr_strengthpip" class="sheet-smallnumber sheet-shortnumber" min="0" max="2" value="0" />
 								</div>
 							</div>
@@ -2934,18 +2996,78 @@
 				</table>
 			</div>		
 		</div>
-		<div name="characterfeatures" class="sheet-section">
+		<div name="Advantages" class="sheet-section">
 			<div class="sheet-heading">
-				Advantages &amp; Disadvantages
+				Advantages
 			</div>	
 			<br />
-			<div class="sheet-2colrow">
-				<div name="Advantages" class="sheet-col">
-				<label class="sheet-areaLabel">Advantages:</label> 
-				<textarea name="attr_advantages" style="height:100px; width:380px;"></textarea></div>
-				<div name="Disadvantages" class="sheet-col">
-				<label class="sheet-areaLabel">Disadvantages:</label> 
-				<textarea name="attr_disadvantages" style="height:100px; width:380px;"></textarea></div>
+			<div class="sheet-colrow">
+				<div name="advantages" class="sheet-row">
+					<table style="border-spacing:1px">
+						<thead>
+							<tr>
+								<th style="width: 30%;">Name</th>
+								<th style="width: 65%;">Details</th>
+								<th style="width: 5%; text-align: center">Cost</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" class="sheet-regular-textbox" name="attr_advantagename" style="width: 100%;" /></td>
+								<td><input type="text" class="sheet-regular-textbox" name="attr_advantagedetails" style="width: 100%;" /></td>
+								<td><input type="text" class="sheet-regular-textbox" name="attr_advantagecost" style="width: 100%;" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<fieldset class="repeating_addadvantages">
+						<table style="border-spacing:1px">
+							<tbody>					
+								<tr>
+									<td style="width: 30%;"><input type="text" class="sheet-regular-textbox" name="attr_addadvantagename" style="width: 100%;" /></td>
+									<td style="width: 65%;"><input type="text" class="sheet-regular-textbox" name="attr_addadvantagedetails" style="width: 100%;" /></td>
+									<td style="width: 5%;"><input type="text" class="sheet-regular-textbox" name="attr_addadvantagecost" style="width: 100%;" /></td>
+								</tr>
+							</tbody>
+						</table>	
+					</fieldset>				
+				</div>
+			</div>
+		</div>
+		<div name="Disadvantages" class="sheet-section">
+			<div class="sheet-heading">
+				Disadvantages
+			</div>	
+			<br />
+			<div class="sheet-colrow">
+				<div name="disadvantages" class="sheet-row">
+					<table style="border-spacing:1px">
+						<thead>
+							<tr>
+								<th style="width: 30%;">Name</th>
+								<th style="width: 65%;">Details</th>
+								<th style="width: 5%; text-align: center">Cost</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td><input type="text" class="sheet-regular-textbox" name="attr_disadvantagename" style="width: 100%;" /></td>
+								<td><input type="text" class="sheet-regular-textbox" name="attr_disadvantagedetails" style="width: 100%;" /></td>
+								<td><input type="text" class="sheet-regular-textbox" name="attr_disadvantagecost" style="width: 100%;" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<fieldset class="repeating_adddisadvantages">
+						<table style="border-spacing:1px">
+							<tbody>					
+								<tr>
+									<td style="width: 30%;"><input type="text" class="sheet-regular-textbox" name="attr_adddisadvantagename" style="width: 100%;" /></td>
+									<td style="width: 65%;"><input type="text" class="sheet-regular-textbox" name="attr_adddisadvantagedetails" style="width: 100%;" /></td>
+									<td style="width: 5%;"><input type="text" class="sheet-regular-textbox" name="attr_adddisadvantagecost" style="width: 100%;" /></td>
+								</tr>
+							</tbody>
+						</table>	
+					</fieldset>				
+				</div>
 			</div>
 		</div>
 		<div name="Powers" class="sheet-section">
@@ -3039,134 +3161,24 @@
 				</div>
 			</div>
 		</div>
-		<div name="weapons" class="sheet-section">
+		<div name="equipment" class="sheet-section">
 			<div style="padding-bottom: 10px">
 				<div class="sheet-heading">
 					Equipment
 				</div>
 			</div>
 			<div class='sheet-colrow'>
-				<label style="font-size: 1.5em">Armors</label> 
-				<table style="width: 100%">
-					<tr>
-						<th style="width: 30%">Type</th>
-						<th style="width: 10%; text-align: center;">Soak</th>
-						<th style="width: 10%; text-align: center;">Penalty</th>
-						<th style="width: 50%">Notes</th>
-					</tr>
-					<tr>
-						<td colspan="4">
-							<table style="width: 100%">
-								<tr>
-									<td style="width: 30%"><input type="text" class="sheet-regular-textbox" name="attr_armortype" /></span></td>
-									<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_soakvalue" class="sheet-smallnumber" min="0" value="0" /></span></td>
-									<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_penaltyvalue" class="sheet-smallnumber" min="-99" max="99" value="0" /></td>
-									<td style="width: 50%"><input type="text" style="width: 100%" class="sheet-regular-textbox" name="attr_armornotes" /></td>
-								</tr>
-							</table>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="4">
-							<fieldset class="repeating_addarmor">
-								<table style="width: 100%">
-									<tr>
-										<td style="width: 30%"><input type="text" class="sheet-regular-textbox" name="attr_addarmortype" /></td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_addsoakvalue" class="sheet-smallnumber" min="0" value="0" /></td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_addpenaltyvalue" class="sheet-smallnumber" min="-99" max="99" value="0" /></td>
-										<td style="width: 50%"><input type="text" style="width: 100%" class="sheet-regular-textbox" name="attr_addarmornotes" /></td>
-									</tr>
-								</table>
-							</fieldset>
-						</td>
-					</tr>
-				</table>
-				<br />
-				<div name="weapon" class="sheet-row">
-					<label style="font-size: 1.5em">Weapons</label>
-					<table style="width: 100%">
-						<tr>
-							<th style="width: 30%">Type</th>
-							<th style="width: 20%; text-align: center;">Damage</th>
-							<th style="width: 10%; text-align: center;">Range</th>
-							<th style="width: 10%; text-align: center;">Ammo</th>
-							<th style="width: 30%">Notes</th>
-						</tr>
-						<tr>
-							<td colspan="5">
-								<table style="width: 100%">
-									<tr>
-										<td style="width: 30%"><input type="text" class="sheet-regular-textbox" name="attr_weapontype" /></td>
-										<td style="width: 20%; text-align: center;">
-											<input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_dmg" class="sheet-smallnumber" min="0" value="0" />D+
-											<input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_dmgpip" class="sheet-smallnumber" min="0" max="2" value="0" />
-										</td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_range" class="sheet-smallnumber" min="0" /></td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_ammo" class="sheet-smallnumber" min="0" value="0" /></td>
-										<td style="width: 30%"><input type="text" style="width: 100%" class="sheet-regular-textbox" name="attr_weaponnotes" /></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="5">
-								<fieldset class="repeating_addweapon">
-									<table style="width: 100%">
-									<tr>
-										<td style="width: 30%"><input type="text" class="sheet-regular-textbox" name="attr_addweapontype" /></td>
-										<td style="width: 20%; text-align: center;">
-											<input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_adddmg" class="sheet-smallnumber" min="0" value="0" />D+
-											<input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_adddmgpip" class="sheet-smallnumber" min="0" max="2" value="0" />
-										</td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_addrange" class="sheet-smallnumber" min="0" /></td>
-										<td style="width: 10%; text-align: center;"><input type="number" class="sheet-smallnumber sheet-shortnumber" name="attr_addammo" class="sheet-smallnumber" min="0" value="0" /></td>
-										<td style="width: 30%"><input type="text" style="width: 100%" class="sheet-regular-textbox" name="attr_addweaponnotes" /></td>
-									</table>
-								</fieldset>
-							</td>
-						</tr>
-					</table>
-				</div>
-				<br />
-				<div class='sheet-colrow'>
-					<label>Equipment:</label> 
-					<table style="width: 100%">
-						<tr>
-							<th style="width: 40%">Type</th>
-							<th style="width: 60%">Notes</th>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<table style="width: 100%">
-									<tr>
-										<td style="width: 40%"><input type="text" style="width: 99%" class="sheet-regular-textbox" name="attr_equip" /></td>
-										<td style="width: 60%"><input type="text" style="width: 100%" class="sheet-regular-textbox" name="attr_equipnotes" /></td>
-									</tr>
-								</table>
-							</td>
-						</tr>
-						<tr>
-							<td colspan="2">
-								<fieldset class="repeating_addequip">
-									<table style="width: 100%">
-										<tr>
-											<td style="width: 40%"><input type="text" style="width: 99%" class="sheet-regular-textbox" name="attr_addequip" /></td>
-											<td style="width: 60%"><input type="text" style="width: 100%" class="sheet-regular-textbox" name="attr_addequipnotes" /></td>
-										</tr>
-									</table>
-								</fieldset>
-							</td>
-						</tr>
-					</table>
-				</div>
+				<textarea name="attr_equipment" style="height:200px; width:803px;"></textarea>
 			</div>
 		</div>
-		<div name="wealth" class="sheet-section">
-			<div class="sheet-heading">
-				Wealth
+		<div name="notes" class="sheet-section">
+			<div style="padding-bottom: 10px">
+				<div class="sheet-heading">
+					Notes
+				</div>
 			</div>
 			<div class='sheet-colrow'>
-				<textarea name="attr_wealth" style="height:100px; width:803px;"></textarea>
+				<textarea name="attr_notes" style="height:200px; width:803px;"></textarea>
 			</div>
 		</div>
 	</div>
